@@ -1,0 +1,52 @@
+[
+    {
+        "idx": 0,
+        "text": "Continuous generative models proved their usefulness in high-dimensional data, such as image and audio generation.",
+        "labels": "BAC"
+    },
+    {
+        "idx": 0,
+        "text": "However, continuous models for text generation have received limited attention from the community.",
+        "labels": "GAP"
+    },
+    {
+        "idx": 0,
+        "text": "In this work, we study continuous text generation using Transformers for neural machine translation (NMT).",
+        "labels": "PUR"
+    },
+    {
+        "idx": 0,
+        "text": "We argue that the choice of embeddings is crucial for such models, so we aim to focus on one particular aspect{''}:'' target representation via embeddings.",
+        "labels": "PUR"
+    },
+    {
+        "idx": 0,
+        "text": "We explore pretrained embeddings and also introduce knowledge transfer from the discrete Transformer model using embeddings in Euclidean and non-Euclidean spaces.",
+        "labels": "MTD"
+    },
+    {
+        "idx": 0,
+        "text": "Our results on the WMT Romanian-English and English-Turkish benchmarks show such transfer leads to the best-performing continuous model",
+        "labels": "CLN"
+    },
+    {
+        "idx": 1,
+        "text": "Pretrained multilingual encoders enable zero-shot cross-lingual transfer, but often produce unreliable models that exhibit high performance variance on the target language. ",
+        "labels": "GAP"
+    },
+    {
+        "idx": 1,
+        "text": "We postulate that this high variance results from zero-shot cross-lingual transfer solving an under-specified optimization problem.",
+        "labels": "PUR"
+    },
+    {
+        "idx": 1,
+        "text": "We show that any linear-interpolated model between the source language monolingual model and source + target bilingual model has equally low source language generalization error, yet the target language generalization error reduces smoothly and linearly as we move from the monolingual to bilingual model, suggesting that the model struggles to identify good solutions for both source and target languages using the source language alone.",
+        "labels": "CLN"
+    },
+    {
+        "idx": 1,
+        "text": "Additionally, we show that zero-shot solution lies in non-flat region of target language error generalization surface, causing the high variance.",
+        "labels": "CLN"
+    }
+]

@@ -1,0 +1,76 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --------------------
+# Jupyter / IPython
+# --------------------
+.ipynb_checkpoints
+
+# --------------------
+# VSCode / PyCharm
+# --------------------
+.vscode/
+.idea/
+
+# --------------------
+# macOS
+# --------------------
+.DS_Store
+
+# --------------------
+# Virtual Environment
+# --------------------
+venv/
+env/
+.sci/
+.sci_fine_tuning/
+*.env
+
+# --------------------
+# Logs / Checkpoints / Outputs
+# --------------------
+logs/
+*.log
+output/
+checkpoints/
+checkpoints/*/pytorch_model.bin
+checkpoints/*/trainer_state.json
+*.ckpt
+
+# --------------------
+# HuggingFace cache
+# --------------------
+.cache/
+.huggingface/
+*.jsonl
+
+# --------------------
+# Datasets & Preprocessed files
+# --------------------
+*.arrow
+processed/
+__pycache__/
+multirun/
+
+# --------------------
+# Token files (别把密钥上传上去)
+# --------------------
+hf_token.txt
+*.secret
+*.key
+
+# --------------------
+# ONNX / Model Exports
+# --------------------
+*.onnx
+*.pt
+*.bin

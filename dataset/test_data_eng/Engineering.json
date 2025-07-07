@@ -1,0 +1,52 @@
+[
+    {
+        "idx": 0,
+        "text": "The curve-face gear pair is a new type of face gear pair with a variable transmission ratio.",
+        "labels": "BAC"
+    },
+    {
+        "idx": 0,
+        "text": "Concerning the complexity of its tooth surface, based on the coordinate transformation principle and the spatial meshing theory, a discrete algorithm of this tooth surface was proposed. ",
+        "labels": "PUR"
+    },
+    {
+        "idx": 0,
+        "text": "The determination rule of the limiting points on the tooth surface was analyzed by introducing the generating method and tooth surface characteristics of this gear tooth.",
+        "labels": "MTD"
+    },
+    {
+        "idx": 0,
+        "text": "Through the corresponding limiting angles and the distribution law of the contact line, the gear tooth surface was discretized, and the theoretical data points of the tooth surface were obtained.",
+        "labels": "MTD"
+    },
+    {
+        "idx": 0,
+        "text": "The variations in gear tooth surface in a meshing cycle and under different parameters were analyzed.",
+        "labels": "MTD"
+    },
+    {
+        "idx": 0,
+        "text": "By comparing the virtual tooth model and the corresponding rolling experiment, the correctness of the tooth surface discrete algorithm of the curve-face gear was verified.",
+        "labels": "RST"
+    },
+    {
+        "idx": 1,
+        "text": "Engineered products often have more social impacts than are realized.",
+        "labels": "BAC"
+    },
+    {
+        "idx": 1,
+        "text": "A product review was conducted to bring this to light. ",
+        "labels": "PUR"
+    },
+    {
+        "idx": 1,
+        "text": "In this paper, we show the extent to which different social impacts in 11 impact categories are co-present in 150 products and how this can help engineers and others during the product development process.",
+        "labels": "PUR"
+    },
+    {
+        "idx": 1,
+        "text": "Specifically, we show how social impact categories not previously considered can be identified. ",
+        "labels": "PUR"
+    }
+]
