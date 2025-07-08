@@ -1,5 +1,3 @@
-# ✅ 修复后的 train.py：兼容 Gemma 和 transformers 最新版（开发版）
-
 import os
 import torch
 from datasets import load_from_disk
@@ -9,56 +7,50 @@ from transformers import (
     Trainer,
     TrainingArguments,
     DataCollatorForSeq2Seq,
-    EarlyStoppingCallback,
-    DefaultFlowCallback,
 )
 from peft import get_peft_model, LoraConfig, TaskType
-from metrics import compute_metrics
-from dotenv import load_dotenv
-load_dotenv()
 
+# ✅ 格式化输入：拼接 prompt
 def format_input(example):
     prompt = f"{example['instruction']}\n{example['input']}"
     return {"prompt": prompt, "output": example["output"]}
 
 
 def main():
-    # 从环境变量中安全地获取 Hugging Face Token
-    HF_TOKEN = os.getenv("HF_TOKEN")
-    if HF_TOKEN is None:
-        raise EnvironmentError("❌ 环境变量 HF_TOKEN 未设置，请通过 export HF_TOKEN=your_token 设置。")
+    model_path = "./gemma_local"
+    dataset_path = "./processed/example"
+    output_dir = "checkpoints/example_lora"
 
-    model_name_or_path = "google/gemma-3n-E4B-it"
-    dataset_path = "processed/context"
-    output_dir = "checkpoints/context_lora"
-
+    # ✅ 加载和预处理数据集
     dataset = load_from_disk(dataset_path)
     dataset = dataset.map(format_input)
     dataset = dataset.remove_columns(["instruction", "input"])
 
     tokenizer = AutoTokenizer.from_pretrained(
-        model_name_or_path,
-        token=HF_TOKEN,
-        trust_remote_code=True
+        model_path,
+        trust_remote_code=True,
+        local_files_only=True
     )
     tokenizer.pad_token = tokenizer.eos_token
+
     def tokenize_function(examples):
         return tokenizer(
             examples["prompt"],
             text_target=examples["output"],
             padding="max_length",
             truncation=True,
-            max_length=512
+            max_length=256
         )
 
     tokenized_dataset = dataset.map(tokenize_function, batched=True)
 
+    # ✅ 加载模型并应用 LoRA
     model = AutoModelForCausalLM.from_pretrained(
-        model_name_or_path,
+        model_path,
         torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
         device_map="auto" if torch.cuda.is_available() else None,
-        token=HF_TOKEN,
-        trust_remote_code=True
+        trust_remote_code=True,
+        local_files_only=True
     )
 
     lora_config = LoraConfig(
@@ -71,7 +63,7 @@ def main():
     )
     model = get_peft_model(model, lora_config)
 
-    # ✅ 不再使用 evaluation_strategy 参数，手动使用 callback 控制评估频率
+    # ✅ 训练参数（无评估，稳定）
     training_args = TrainingArguments(
         output_dir=output_dir,
         per_device_train_batch_size=4,
@@ -81,13 +73,10 @@ def main():
         bf16=torch.cuda.is_available(),
         logging_dir=os.path.join(output_dir, "logs"),
         logging_steps=10,
+        save_strategy="steps",
+        save_steps=200,
         save_total_limit=2,
         report_to=[],
-        # ❌ 这些都不要加
-        # evaluation_strategy="steps",
-        # save_strategy="steps",
-        # load_best_model_at_end=True,
-        # eval_steps=50,
     )
 
     trainer = Trainer(
@@ -96,16 +85,11 @@ def main():
         args=training_args,
         train_dataset=tokenized_dataset["train"],
         data_collator=DataCollatorForSeq2Seq(tokenizer, model=model),
-        compute_metrics=compute_metrics,
-        callbacks=[DefaultFlowCallback, EarlyStoppingCallback(early_stopping_patience=2)]
     )
 
     trainer.train()
 
-    model.save_pretrained(output_dir)
-    tokenizer.save_pretrained(output_dir)
-
-    print("✅ 训练完成，模型已保存到:", output_dir)
+    print("✅ 训练完成，模型已保存至:", output_dir)
 
 
 if __name__ == "__main__":

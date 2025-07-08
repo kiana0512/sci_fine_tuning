@@ -74,3 +74,4 @@ hf_token.txt
 *.onnx
 *.pt
 *.bin
+/gemma_local/
