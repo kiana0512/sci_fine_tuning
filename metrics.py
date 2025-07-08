@@ -1,17 +1,15 @@
-# metrics.py
+# sci_fine_tuning/metrics.py
 
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
 
 def compute_metrics(eval_preds):
     """
-    计算准确率、精确率、召回率、F1 值。
+    支持 (preds, labels) 结构的评估函数。
     """
     preds, labels = eval_preds
-    preds = preds.argmax(-1)
-
     acc = accuracy_score(labels, preds)
-    precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average='macro')
+    precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average='macro', zero_division=0)
 
     return {
         "accuracy": acc,
