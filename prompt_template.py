@@ -1,10 +1,29 @@
-# sci_fine_tuning/prompt_template.py
-
 def build_prompt(example):
     """
-    从 instruction 和 input 构造 prompt。
-    当前 example 来自 LoRA 格式化后的数据集，字段为：
-    - instruction: 提示词，例如“请根据上下文为当前句子分类。”
-    - input: 拼接后的上下文
+    Few-shot prompt with strong label constraint.
     """
-    return f"{example['instruction']}\n{example['input']}"
+    label_set = "MTD, BAC, PUR, GAP, RST, CLN, CTN, IMP"
+
+    few_shot = """Example 1:
+Previous: The model is trained using simulation data.
+Current: The approach improves adaptability in real-world settings.
+Next: It has been shown effective for different vehicle configurations.
+Label: MTD
+
+Example 2:
+Previous: Previous work provides limited insight.
+Current: There is a need to explore this area further.
+Next: We propose a new method to fill this gap.
+Label: GAP
+"""
+
+    prompt = f"""{example['instruction']}
+
+{few_shot}
+You must respond with **one label** chosen strictly from: [{label_set}].
+
+Input:
+{example['input']}
+Label:"""
+
+    return prompt

@@ -6,11 +6,18 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from datasets import load_from_disk
 from tqdm import tqdm
 from prompt_template import build_prompt
-from metrics import compute_metrics  # 使用你原来的 metrics.py
+from metrics import compute_metrics
 from collections import Counter
 
+# 定义合法标签集合（根据你的任务）
+VALID_LABELS = {"MTD", "BAC", "PUR", "GAP", "RST", "CLN", "CTN", "IMP"}
 
-def generate_prediction(model, tokenizer, prompt, max_new_tokens=8):
+
+def generate_prediction(model, tokenizer, prompt, max_new_tokens=3):
+    """
+    Generate prediction from model given prompt.
+    Only returns label if in VALID_LABELS, else returns "UNKNOWN".
+    """
     inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=512).to(model.device)
     with torch.no_grad():
         output_ids = model.generate(
@@ -20,41 +27,54 @@ def generate_prediction(model, tokenizer, prompt, max_new_tokens=8):
         )
     decoded = tokenizer.decode(output_ids[0], skip_special_tokens=True)
     generated = decoded[len(prompt):].strip()
-    prediction = generated.split()[0].strip("：:，,。 \n")
-    return prediction
+    pred = generated.split()[0].strip(":：,，.。\n ")
+    if pred not in VALID_LABELS:
+        return "UNKNOWN"
+    return pred
 
 
 def main():
-    base_model_path = "./gemma_local"       # ✅ 原始基座模型
-    lora_path = "checkpoints/context_lora/checkpoint-570"       # ✅ LoRA 参数路径
-    data_path = "./processed/context_split"        # ✅ 你的数据路径
+    base_model_path = "./gemma_local"
+    lora_path = "checkpoints/example_lora/checkpoint-570"
+    data_path = "./processed/example_split"
 
-    # 加载数据集（train_test_split 后）
-    dataset = load_from_disk(data_path)["validation"]  # 使用 test 分支做验证
+    # Load validation dataset
+    dataset = load_from_disk(data_path)["validation"]
+
+    # Load tokenizer and LoRA-adapted model
     tokenizer = AutoTokenizer.from_pretrained(base_model_path, trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained(base_model_path, device_map="auto", torch_dtype=torch.float16)
-    model = PeftModel.from_pretrained(model, lora_path)  # ✅ 应用 LoRA 参数
+    model = PeftModel.from_pretrained(model, lora_path)
+    model.eval()
 
     pred_labels = []
     true_labels = []
 
-    print("🔍 正在生成预测...")
+    print("🔍 Generating predictions...")
     for example in tqdm(dataset):
         prompt = build_prompt(example)
         pred = generate_prediction(model, tokenizer, prompt)
         pred_labels.append(pred)
-        true_labels.append(example["output"])  # ✅ output 是真实标签
+        true_labels.append(example["output"])
 
-    # 输出前10对比
-    print("\n👀 前10个预测 vs 实际标签：")
+    # Display top 10 predictions
+    print("\n👀 Top 10 Predictions vs Ground Truth:")
     for i in range(min(10, len(pred_labels))):
         print(f"{i + 1}. Pred: {pred_labels[i]} | Label: {true_labels[i]}")
 
-    print("\n📊 预测标签分布：", Counter(pred_labels))
-    print("📊 真实标签分布：", Counter(true_labels))
+    print("\n📊 Prediction label distribution:", Counter(pred_labels))
+    print("📊 True label distribution:", Counter(true_labels))
 
-    print("\n✅ 验证集评估结果：")
-    results = compute_metrics((pred_labels, true_labels))
+    # Optionally remove UNKNOWN before computing metrics
+    filtered_preds = []
+    filtered_labels = []
+    for pred, label in zip(pred_labels, true_labels):
+        if pred != "UNKNOWN":
+            filtered_preds.append(pred)
+            filtered_labels.append(label)
+
+    print("\n✅ Evaluation Metrics (excluding UNKNOWN):")
+    results = compute_metrics((filtered_preds, filtered_labels))
     for k, v in results.items():
         print(f"{k}: {v:.4f}")
 

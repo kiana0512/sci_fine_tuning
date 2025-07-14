@@ -37,8 +37,8 @@ def split_existing_hf_dataset(
 
 if __name__ == "__main__":
     split_existing_hf_dataset(
-        data_path="processed/context",
+        data_path="processed/example",
         test_size=0.1,
         seed=42,
-        save_path="processed/context_split"
+        save_path="processed/example_split"
     )
