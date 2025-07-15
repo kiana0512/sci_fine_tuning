@@ -67,7 +67,7 @@ def plot_scalars(tag_data, valid_tags, output_path, smooth=False):
 
 
 def main():
-    logdir = "checkpoints/example_lora/tblog"
+    logdir = "checkpoints/context_lora/tblog"
     output_path = "training_metrics.png"
     smooth = True
 

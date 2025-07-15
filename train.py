@@ -30,24 +30,36 @@ class MetricLoggerCallback(TrainerCallback):
         if logs is not None and "loss" in logs:
             loss = logs.get("loss")
             lr = logs.get("learning_rate", None)
+            grad = logs.get("grad_norm", None)
 
             self.records.append({"step": step, "loss": loss, "learning_rate": lr})
             self.writer.add_scalar("Loss/train", loss, step)
             if lr is not None:
                 self.writer.add_scalar("LearningRate", lr, step)
+            if grad is not None:
+                self.writer.add_scalar("grad_norm", grad, step)
             print(f"[TensorBoard] step={step} loss={loss:.4f} lr={lr:.6e}")
+            if grad is not None:
+                print(f"grad_norm: {grad:.4f}")
 
-    def on_step_end(self, args, state, control, model=None, **kwargs):
+    def on_optimizer_step(self, args, state, control, optimizer=None, model=None, **kwargs):
         step = state.global_step
         total_norm = 0.0
+        grad_found = False
+
         for p in model.parameters():
             if p.grad is not None:
+                grad_found = True
                 param_norm = p.grad.data.norm(2)
                 total_norm += param_norm.item() ** 2
+
         total_norm = math.sqrt(total_norm)
-        self.writer.add_scalar("GradientNorm", total_norm, step)
-        if self.records:
-            self.records[-1]["grad_norm"] = total_norm
+        if grad_found:
+            self.writer.add_scalar("grad_norm", total_norm, step)
+            if self.records:
+                self.records[-1]["grad_norm"] = total_norm
+        else:
+            print(f"[Step {step}] ⚠️ No gradients found.")
 
     def on_train_end(self, args, state, control, **kwargs):
         self.writer.export_scalars_to_json(os.path.join(args.output_dir, "all_scalars.json"))
@@ -57,8 +69,8 @@ class MetricLoggerCallback(TrainerCallback):
 def main():
     # ===== 路径设置 =====
     model_path = "./gemma_local"
-    dataset_path = "./processed/example"
-    output_dir = "checkpoints/example_lora"
+    dataset_path = "./processed/context"
+    output_dir = "checkpoints/context_lora"
     log_dir = os.path.join(output_dir, "tblog")
     os.makedirs(log_dir, exist_ok=True)
 
