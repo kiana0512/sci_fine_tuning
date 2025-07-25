@@ -1,0 +1,5 @@
+Title: ACMG recommendations for reporting of incidental findings in clinical exome and genome sequencing
+Authors: R. Green, J. Berg, W. Grody, Sarah S. Kalia, B. Korf, C. Martin, A. McGuire, R. Nussbaum, Julianne M. O’Daniel, K. Ormond, H. Rehm, M. Watson, Marc S. Williams, L. Biesecker
+Abstract: None
+Citation: e. 
+g., Ambridge, 2013; Ambridge et al., 2015; Ellis, 2002; Goldberg, 2006; Perek & Goldberg, 2017; Robenalt & Goldberg, 2015

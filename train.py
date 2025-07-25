@@ -19,7 +19,7 @@ def format_input(example):
     return {"prompt": prompt, "output": example["output"]}
 
 
-# ✅ 自定义 TensorBoard 日志记录器
+#  自定义 TensorBoard 日志记录器
 class MetricLoggerCallback(TrainerCallback):
     def __init__(self, log_dir):
         self.records = []
@@ -134,7 +134,7 @@ def main():
         save_steps=100,
         save_total_limit=3,
 
-        report_to=[],  # ❌ 禁用 transformers 默认日志
+        report_to=[],  #  禁用 transformers 默认日志
     )
 
     trainer = Trainer(
@@ -148,7 +148,7 @@ def main():
 
     # ===== 开始训练 =====
     trainer.train()
-    print("✅ 训练完成，TensorBoard 日志保存在:", log_dir)
+    print(" 训练完成，TensorBoard 日志保存在:", log_dir)
 
 
 if __name__ == "__main__":

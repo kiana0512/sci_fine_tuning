@@ -1,0 +1,128 @@
+Abdi Tabari, M., & Wang, Y. (2022). Assessing linguistic complexity features in L2 writing: Understanding effects of topic familiarity and strategic planning within the 
+realm of task readiness. Assessing Writing, 52, Article 100605.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+Ambridge, B. (2013). How do children restrict their linguistic generalizations? An (un-)grammaticality judgment study. Cognitive Science, 37, 508–543.
+Ambridge, B., Bidgood, A., Twomey, K. E., Pine, J. M., Rowland, C. F., & Freudenthal, D. (2015). Preemption versus entrenchment: Towards a construction-general 
+solution to the problem of the retreat from verb argument structure overgeneralization. PLoS One, 10, Article e0123723.
+Baronchelli, A., Ferrer-i-Cancho, R., Pastor-Satorras, R., Chater, N., & Christiansen, M. H. (2013). Networks in cognitive science. Trends in Cognitive Sciences, 17, 
+348–360.
+Bates, D., M¨achler, M., Bolker, B., & Walker, S. (2015). Fitting linear mixed-effects models using lme4. Journal of Statistical Software, 67, 1–48.
+Beers, S. F., & Nagy, W. E. (2009). Syntactic complexity as a predictor of adolescent writing quality: Which measures? Which genre? Reading and Writing, 22, 185–200.
+Berman, R. A. (2008). The psycholinguistics of developing text construction. Journal of Child Language, 35, 735–771.
+Berman, R. A., & Nir–Sagiv, B. (2009). Clause-packaging in narratives: A crosslinguistic developmental study. In D. I. Slobin, J. Guo, E. Lieven, S. Ervin– Tripp, 
+N. Budwig, S. ¨Ozçalis¸kan, & K. Nakamura (Eds.), Crosslinguistic approaches to the psychology of language: Research in the tradition (pp. 149–162). Mahwah, NJ: 
+Lawrence Erlbaum. 
+Berman, R. A., & Slobin, D. I. (2013). Relating events in narrative: A crosslinguistic developmental study. New York: Psychology Press. 
+Biber, D., & Conrad, S. (2009). Register, genre, and style. Cambridge, UK: Cambridge University Press. 
+Biber, D., Gray, B., & Staples, S. (2016). Predicting patterns of grammatical complexity across language exam task types and proficiency levels. Applied Linguistics, 37, 
+639–668.
+Bird, S., Klein, E., & Loper, E. (2009). Natural Language processing with Python: Analyzing text with the Natural Language Toolkit. O’Reilly. 
+Blondel, V. D., Guillaume, J.-L., Lambiotte, R., & Lefebvre, E. (2008). Fast unfolding of communities in large networks. Journal of Statistical Mechanics, Article P10008.
+Bult´e, B., & Housen, A. (2012). Defining and operationalising L2 complexity. In A. Housen, F. Kuiken, & F. Vedder (Eds.), Dimensions of L2 performance and proficiency: 
+Complexity, accuracy and fluency in SLA (pp. 21–46). Amsterdam: John Benjamins. 
+Bybee, J. (2008). Usage-based grammar and second language acquisition. In P. Robinson, & N. C. Ellis (Eds.), Handbook of cognitive linguistics and second language 
+acquisition (pp. 216–236). New York: Routledge. 
+Casal, J. E., & Kessler, M. (2020). Form and rhetorical function of phrase-frames in promotional writing: A corpus-and genre-based analysis. System, 95, Article 
+102370.
+Council of Europe. (2011). Common European framework of reference for languages. Learning, teaching, assessment. Council of Europe. 
+Crossley, S. A., & McNamara, D. S. (2012). Predicting second language writing proficiency: The roles of cohesion and linguistic sophistication. Journal of Research in 
+Reading, 35, 115–135.
+de Nooy, W., Mrvar, A., & Batagelj, V. (2018). Exploratory social network analysis with Pajek: Revised and expanded edition for updated software. Cambridge, UK: 
+Cambridge University Press. 
+Ellis, N. C. (2002). Frequency effects in language processing: A review with implications for theories of implicit and explicit language acquisition. Studies in Second 
+Language Acquisition, 24, 143–188.
+Ellis, N. C. (2006). Selective attention and transfer phenomena in SLA: Contingency, cue competition, salience, interference, overshadowing, blocking, and perceptual 
+learning. Applied Linguistics, 27, 1–31.
+Ellis, N. C. (2008). The dynamics of language use, language change, and first and second language acquisition. The Modern Language Journal, 41, 232–249.
+Ellis, N. C., & Ferreira-Junior, F. (2009). Constructions and their acquisition: Islands and the distinctiveness of their occupancy. Annual Review of Cognitive Linguistics, 
+7, 188–221.
+Ellis, N. C., & Larsen-Freeman, D. (2009). Constructing a second language: Analyses and computational simulations of the emergence of linguistic constructions from 
+usage. Language Learning, 59, 90–125.
+Ellis, N. C., O’Donnell, M. B., & R¨omer, U. (2013). Usage-based language: Investigating the latent structures that underpin acquisition. Language Learning, 63, 25–51.
+Freeman, L. C. (1977). A set of measures of centrality based on betweenness. Sociometry, 40, 35–41.
+Gentner, D. (1982). Why nouns are learned before verbs: Linguistic relativity versus natural partitioning. In S. A. Kuczaj (Ed.), Language development: Vol. 2. Language, 
+thought, and culture (pp. 301–334). Lawrence Erlbaum Associates. 
+Goh, C., & Burns, A. (2012). Teaching speaking: A holistic approach. New York, NY: Cambridge University Press. 
+Goldberg, A. E. (1995). Constructions: A construction grammar approach to argument structure. London: University of Chicago Press. 
+Goldberg, A. (1999). The emergence of the semantics of argument structure construction. In B. MacWhinney (Ed.), The emergence of language (pp. 197–212). Hillsdale, 
+NJ: Lawrence Erlbaum. 
+Goldberg, A. E. (2006). Constructions at work: The nature of generalization in language. Oxford: University Press. 
+Goldberg, A. E. (2019). Explain me this: Creativity, competition and the partial productivity of constructions. Princeton, NJ: Princeton University Press. 
+Goldberg, A. E., Casenhiser, D. M., & Sethuraman, N. (2004). Learning generalizations. Cognitive Linguistics, 15, 289–316.
+Gries, S. T., & Ellis, N. C. (2015). Statistical measures for usage-based linguistics. Language Learning, 65, 228–255.
+Hagberg, A. A., Schult, D. A., & Swart, P. J. (2008). Exploring network structure, dynamics, and function using NetworkX. In G. Varoquaux, T. Vaught, & K. J. Millman 
+(Eds.), Proceedings of the 7th Python in science conference (pp. 11–15).
+Honnibal, M., & Montani, I. (2019). spaCy 2: Natural language understanding with bloom embeddings, convolutional neural networks and incremental parsing 
+Version 2.0.18. https://spacy.io. January 2021.
+Huang, L., & Li, Y. (2023). Revisiting the relationships of n-gram measures to L2 writing proficiency: Comparisons between genres and connections to vocabulary 
+levels. System, 118, Article 103136.
+Hwang, H., Choe, A., & Zenker, F. (2020). Construction counter: A tool to measure (nonnative) language development. Brown Bag Series. University of Hawai‘i at 
+M¯anoa.
+Hyland, K. (2007). Genre pedagogy: Language, literacy and L2 writing instruction. Journal of Second Language Writing, 16, 148–164.
+Kang, S., & Lee, J. H. (2019). Are two heads always better than one? The effects of collaborative planning on L2 writing in relation to task complexity. Journal of 
+Second Language Writing, 45, 61–72.
+Kim, H., & Hwang, H. (2022). Assessing verb-construction integration in young learners of english as a foreign language: Analyses of written and spoken production. 
+Language Learning, 72, 497–533.
+Kim, H., & Ro, E. (2024). Usage-based approaches to assessing syntactic sophistication in second language writing: Interaction of genre and proficiency. Journal of 
+Second Language Writing, 65, 101131.
+Kormos, J. (2011). Task complexity and linguistic and discourse features of narrative writing performance. Journal of Second Language Writing, 20, 148–161.
+Kuznetsova, A., Brockhoff, P. B., & Christensen, R. H. B. (2016). lmerTest: Tests in linear mixed effects models.
+Kyle, K. (2016). Measuring syntactic development in L2 writing: Fine grained indices of syntactic complexity and usage-based indices of syntactic sophistication. Georgia State 
+University. Unpublished doctoral dissertation.
+Kyle, K., & Crossley, S. (2017). Assessing syntactic sophistication in L2 writing: A usage-based approach. Language Testing, 34, 513–535.
+Lenth, R. (2018). emmeans: Estimated marginal means, aka least-square means: R package [computer software]. Available at: version 1.2.4. https://cran.r-project. 
+org/package=emmeans.
+Levin, B. (1993). English verb classes and alternations: A preliminary investigation. University of Chicago Press. 
+Li, H., & Yu, X. (2024). Verb argument constructions in argumentative essays by college-level Asian learners of English: Exploring the effects of English proficiency, 
+acquisition context, and topic. Journal of Second Language Writing, 65, Article 101127.
+Lu, X. (2011). A corpus-based evaluation of syntactic complexity measures as indices of college-level ESL writers’ language development. Tesol Quarterly, 45, 36–62.
+Lu, X. (2017). Automated measurement of syntactic complexity in corpus-based L2 writing research and implications for writing assessment. Language Testing, 34, 
+493–511.
+Mostafa, T., & Crossley, S. A. (2020). Verb argument construction complexity indices and L2 writing quality: Effects of writing tasks and prompts. Journal of Second 
+Language Writing, 49. Article 100730.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+Newman, M. E. J. (2010). Networks: An introduction. Oxford, UK: Oxford University Press. 
+Ninio, A. (1999). Pathbreaking verbs in syntactic development and the question of prototypical transitivity. Journal of Child Language, 26, 619–653.
+Norris, J. M., & Ortega, L. (2009). Towards an organic approach to investigating CAF in SLA: The case of complexity. Applied Linguistics, 30, 555–578.
+O’Donnell, M. B., R¨omer, U., & Ellis, N. C. (2013). The development of formulaic sequences in first and second language writing: Investigating effects of frequency, 
+association, and native norm. International Journal of Corpus Linguistics, 18, 83–108.
+Pedersen, T., Patwardhan, S., & Michelizzi, J. (2004). WordNet::Similarity–Measuring the relatedness of concepts. Paper presented at the proceedings of fifth annual 
+meeting of the north American chapter of the association of computational linguistics (NAACL 2004).
+Perek, F., & Goldberg, A. E. (2017). Linguistic generalization on the basis of function and constraints on the basis of statistical preemption. Cognition, 168, 276–293.
+Pu, L., Heng, R., & Cao, C. (2022). The effects of genre on the syntactic complexity of argumentative and expository writing by Chinese EFL learners. Frontiers in 
+Psychology, 13, Article 1047117.
+Qin, W., & Uccelli, P. (2016). Same language, different functions: A cross-genre analysis of Chinese efl learners’ writing performance. Journal of Second Language 
+Writing, 33, 3–17.
+R Core Team. (2024). R: A language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing. http://www.R-project.org/. 
+Ravid, D., & Berman, R. A. (2010). Developing noun phrase complexity at school age: A text-embedded cross-linguistic analysis. First Language, 30, 3–26.
+Renandya, W. A., & Nguyen, M. T. T. (2023). Teaching speaking in L2 contexts. In E. Hinkel (Ed.), Handbook of practical second language teaching and learning (pp. 
+269–280). New York, NY: Routledge. 
+Rhee, S. C., & Jung, C. K. (2012). Yonsei English learner corpus (YELC). Paper presented at the first Yonsei English corpus symposium. March.
+Robenalt, C., & Goldberg, A. E. (2015). Judgement evidence for statistical preemption: It is relatively better to vanish than to disappear a rabbit, but a lifeguard can 
+equally well backstroke or swim children to shore. Cognitive Linguistics, 26, 467–503.
+Robinson, P. (2001). Task complexity, task difficulty, and task production: Exploring interactions in a componential framework. Applied Linguistics, 22, 27–57.
+Robinson, P. (2003). The cognition hypothesis, task design, and adult task-based language learning. Second Language Studies, 21, 45–105.
+Robinson, P., & Ellis, N. (2008). An introduction to cognitive linguistics, second language acquisition, and language instruction. In P. Robinson, & N. Ellis (Eds.), 
+Handbook of cognitive linguistics and second language acquisition (pp. 3–24). New York: Routledge. 
+R¨omer, U., Skalicky, S. C., & Ellis, N. C. (2020). Verb-argument constructions in advanced L2 English learner production: Insights from corpora and verbal fluency 
+tasks. Corpus Linguistics and Linguistic Theory, 16, 303–331.
+Swales, J. M. (1981). Aspects of article introductions: Language studies unit. Birmingham: University of Aston. 
+Swales, J. (1990). Genre analysis: English in academic and research settings. New York: Cambridge University Press. 
+Tardy, C. M. (2011). The history and future of genre in second language writing. Journal of Second Language Writing, 20, 1–5.
+Tomasello, M. (2003). Constructing a language: A usage-based theory of language acquisition. Cambridge, MA: Harvard University Press. 
+Uccelli, P., Dobbs, C. L., & Scott, J. (2013). Mastering academic language: Organization and stance in the persuasive writing of high school students. Written 
+Communication, 30, 36–62.
+Weigle, S. C. (2002). Assessing writing. Cambridge, UK: Cambridge University Press. 
+Wolf-Quintero, K., Inagaki, S., & Kim, H. Y. (1998). Second language development in writing: Measures of fluency, accuracy, & complexity. Honolulu: University of Hawaii 
+Press. 
+Wulff, S., Stefanowitsch, A., & Gries, S. T. (2007). Brutal Brits and persuasive Americans: Variety-specific meaning construction in the into-causative. In G. Radden, K.- 
+M. K¨opcke, T. Berg, & P. Siemund (Eds.), Aspects of meaning construction (pp. 265–281). Amsterdam: John Benjamins. 
+Yoon, H. J. (2017). Investigating the interactions among genre, task complexity, and proficiency in L2 writing: A comprehensive text analysis and study of learner perceptions. 
+Michigan State University. Unpublished doctoral dissertation.
+Yoon, H. J., & Polio, C. (2017). The linguistic development of students of English as a second language in two written genres. Tesol Quarterly, 51, 275–301.
+Zhang, X., & Lu, X. (2022). Revisiting the predictive power of traditional vs. fine-grained syntactic complexity indices for L2 writing quality: The case of two genres. 
+Assessing Writing, 51, Article 100597.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657

@@ -1,0 +1,40 @@
+2.1. Usage-based approaches to verb and construction acquisition
+Through cumulative language experience, learners acquire knowledge about both the form and meaning of various linguistic units. 
+In usage-based constructionist approaches, these form–meaning correspondences are referred to as constructions, which serve as 
+fundamental building blocks that scaffold language development (Bybee, 2008; Goldberg, 1995, 2006, 2019; Goldberg & Casenhiser, 
+2008; Sethuraman & Goodman, 2004; Tomasello, 2003). Among the diverse types of constructions, this study specifically focuses on 
+argument structure constructions (or simply constructions), which represent clausal units that denote the core meanings of events via 
+consistent syntactic configurations (Goldberg, 1995, 2006, 2019).
+The development of constructional knowledge is well-documented in research on monolingual children, who demonstrate the 
+ability to abstract schematic grammatical categories of constructions from specific exemplars of usage, driven by cognitive processes 
+and linguistic input (Ellis, 2006, 2008; Goldberg et al., 2004; Ninio, 1999; Tomasello, 2003). For example, children show con­
+ventionalized patterns in their use of constructions to convey a variety of meanings, such as intransitive actions performed by agents 
+(intransitive construction), movement (intransitive motion construction), actions affecting objects (transitive construction), passive 
+states (passive construction), actions causing a change of location (caused-motion construction), and transfer of possession 
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+(ditransitive construction), as illustrated in (1).
+(1)
+a. The ball bounced. (intransitive)
+
+b. The ball rolled into the hole. (intransitive motion)
+
+c. Peter rolled the ball. (transitive)
+
+d. The ball was rolled (by Peter). (passive)
+
+e. Peter rolled the ball into the hole. (caused motion)
+
+f. Peter gave Nancy the ball. (ditransitive)
+As children acquire constructional knowledge, they also develop sensitivity to the statistical regularities underlying the link be­
+tween verbs and the constructions in which they appear. Within the rich linguistic input, certain verb cues become distinctively 
+associated with particular constructional categories, rendering their co-occurrence highly contingent and thereby facilitating the 
+learning of these associations (Ellis, 2006; Ellis et al., 2013; Gries & Ellis, 2015). This form–meaning contingency between verbs and 
+constructions is primarily determined by both the probability of their co-occurrence in the input and their semantic compatibility (Ellis 
+& Ferreira-Junior, 2012; Gries & Ellis, 2015). For instance, the verb disappear is frequently attested in intransitive (e.g., The rabbit 
+disappeared) and intransitive motion constructions (e.g., The rabbit disappeared into the forest), but is rarely, if ever, found in transitive 
+(e.g., *The magician disappeared the rabbit) or caused-motion constructions (e.g., *The magician disappeared the rabbit into the hat). 
+Furthermore, the inherent intransitivity of the verb disappear aligns it more closely with intransitive constructions, enhancing its 
+semantic compatibility with these structures. The knowledge of these form–meaning contingencies of verbs and constructions allows 
+speakers to produce grammatically correct and semantically appropriate utterances while effectively avoiding overgeneralizations (e. 
+g., Ambridge, 2013; Ambridge et al., 2015; Ellis, 2002; Goldberg, 2006; Perek & Goldberg, 2017; Robenalt & Goldberg, 2015).

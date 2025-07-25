@@ -1,0 +1,735 @@
+NLP-based analysis of verb semantic cohesion in L2 writing: 
+Interaction of genre and proficiency on verb networks
+Hyunwoo Kim *, Woonhyung Chung , Heechung Nam
+Yonsei University, Republic of Korea
+A R T I C L E  I N F O
+Keywords:
+verb semantic cohesion
+L2 writing
+Natural language processing
+Genre
+Semantic network analysis
+A B S T R A C T
+Natural language processing (NLP) is a computer-based approach to linguistic analysis that ap­
+plies algorithmic techniques to textual data, enabling the extraction of complex patterns and the 
+examination of language structures. In second language (L2) writing research, NLP techniques 
+have facilitated increasingly sophisticated analyses of semantic features, extending beyond 
+traditional structural measures to capture deeper mechanisms of meaning construction. While 
+previous studies have explored various dimensions of L2 writing through NLP-based approaches, 
+less attention has been given to how genre influences semantic cohesion, particularly in verb 
+usage. This study investigates genre effects on verb semantic cohesion in L2 writing, using an 
+NLP-based semantic network analysis of narrative and argumentative essays written by higher- 
+and lower-proficiency L2 learners. The semantic network analysis identifies how verbs function as 
+semantic anchors within constructions, illuminating cohesion patterns that reflect writers’ con­
+ceptual organization. Results indicated that higher-proficiency writers demonstrated stronger 
+semantic cohesion and more sophisticated verb usage in argumentative essays, characterized by 
+denser and more interconnected verb networks. In contrast, their narrative essays showed less 
+complex networks with concrete action verbs. Lower-proficiency writers exhibited less pro­
+nounced differentiation between genres, relying on a restricted range of verbs across both types of 
+writing. These findings suggest that advanced L2 writing proficiency is marked by the ability to 
+adapt verb usage to genre-specific demands, aligning with usage-based approaches to language 
+learning. These findings are discussed in light of their potential implications for L2 writing in­
+struction and assessment, emphasizing the importance of considering semantic cohesion and 
+genre-appropriate verb usage.
+1. Introduction
+In recent decades, the emergence of advanced computational techniques has enabled rapid and precise analysis of extensive learner 
+corpus data, particularly in the assessment of linguistic structures as indicators of second language (L2) writing quality. This process 
+has been pronounced in research examining the syntactic complexity of L2 writing. Studies in this area have developed and validated a 
+wide range of indices that reliably capture the diversity and sophistication of structural units, including clauses, phrases, and argument 
+structure constructions (e.g., Biber et al., 2016; Bult´e & Housen, 2012; Kyle & Crossley, 2018; Lu, 2011, 2017; Norris & Ortega, 2009; 
+Wolf-Quintero et al., 1998). In addition, several studies have identified the interactive roles of learner-internal and learner-external 
+* Corresponding author. Department of English Language and Literature 50, Yonsei-ro, Seodaemun-gu, Seoul, Republic of Korea.
+E-mail address: hyunwoo2@yonsei.ac.kr (H. Kim). 
+Contents lists available at ScienceDirect
+System
+journal homepage: www.elsevier.com/locate/system
+https://doi.org/10.1016/j.system.2025.103657
+Received 1 October 2024; Received in revised form 10 March 2025; Accepted 10 March 2025  
+System 131 (2025) 103657 
+Available online 14 March 2025 
+0346-251X/© 2025 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+factors, such as text genre, task complexity, modality, the writer’s familiarity with the topic, motivation, and collaborative planning (e. 
+g., Abdi Tabari & Wang, 2022; Casal & Kessler, 2020; Huang & Li, 2023; Kang & Lee, 2019; Li & Yu, 2024; Mostafa & Crossley, 2020; 
+Kim & Ro, 2024; Pu et al., 2022; Yoon, 2017; Yoon & Polio, 2017; Zhang & Lu, 2022).
+However, previous research has predominantly focused on structural features in learner essays, leaving the semantic dimensions of 
+L2 writing relatively underexplored. This imbalance in research focus potentially limits our understanding of how learners develop 
+their ability to convey meaning effectively in L2 writing, calling for the need to devote equal attention to both form and meaning 
+(Crossley & McNamara, 2012). Exploring semantic features not only helps clarify how L2 learners’ conceptual understanding of 
+phrasal and clausal units influences their written production but also provides additional predictive power in assessing L2 writing 
+quality and development (O’Donnell et al., 2013). To address these gaps, the current study investigates how L2 learners employ 
+semantically cohesive verbs within specific argument structure constructions in written production, while also testing the potential 
+effects of genre and L2 writing proficiency.
+This study expands the scope of previous research in two major ways. First, our investigation into verb semantics in writing is firmly 
+grounded in usage-based approaches to language learning (Bybee, 2008; Goldberg, 1995, 2006, 2019), which posit that language 
+acquisition involves recognizing and internalizing conventionalized patterns in the combination of verbs and argument structure 
+constructions (i.e., clause-level units of form-meaning pairings; Goldberg, 1995, 2006). According to this perspective, language 
+learners gradually acquire knowledge of the distributional properties of verb–construction pairings, facilitating the induction of 
+statistical regularities in their co-occurrence (Ellis et al., 2016; Goldberg, 1995, 2006, 2019; Robinson & Ellis, 2008; Tomasello, 2003).
+One critical component of this statistical learning is the semantic coherence of verbs within constructions. Verb semantic cohesion 
+refers to the degree to which verbs used within specific constructions are semantically related to one another (Ellis & Larsen-Freeman, 
+2009; Ellis et al., 2016). According to Ellis et al. (2016), verb semantic cohesion serves as a key indicator of constructional knowledge 
+development, along with the frequency and contingency of verb–construction pairings, reflecting learners’ ability to employ 
+semantically consistent verbs that align with the core meanings of the constructions. Building on this theoretical framework, our study 
+extends these insights to the context of L2 writing by employing verb semantic network analysis (e.g. Gries & Ellis, 2015; Wulff et al., 
+2007).
+Additionally, this study seeks to examine the potential influence of text genre and writing proficiency on the semantic cohesion of 
+verbs in L2 writing. A substantial body of research has explored genre effects in L2 writing, with a primary focus on the relationship 
+between genre-specific cognitive complexity and linguistic complexity (e.g., Goh & Burns, 2012; Kim & Ro, 2024; Qin & Uccelli, 2016; 
+Renandya & Nguyen, 2023; Yoon, 2017, 2021; Yoon & Polio, 2017; Zhang & Lu, 2022). Findings from these studies indicate that L2 
+learners tend to employ more complex linguistic structures in non-narrative genres, such as argumentative writing, than in narrative 
+genres. Based on Robinson’s Cognition Hypothesis (2001, 2003), this tendency is attributed to the greater cognitive demands of 
+non-narrative genres, which necessitate higher levels of linguistic complexity.
+However, it remains unclear whether this genre effect applies to the semantic aspects of L2 writing, particularly regarding verb 
+semantic cohesion, and how it interacts with L2 writing proficiency. Among many linguistic elements, verbs play a central role in 
+structuring discourse, encoding event relations, argument structure, and information flow (Gentner, 1982; Levin, 1993). Given their 
+fundamental role in establishing coherence within a text (Gries & Ellis, 2015), it is plausible that genre effects influence the semantic 
+cohesion of verbs as well. Moreover, since the ability to construct cohesive texts often requires greater attentional resources and 
+proficiency (Kormos, 2011), the genre effect on verb semantic cohesion is likely to be more pronounced among higher-proficiency 
+writers, who tend to possess a broader repertoire of linguistic resources and greater genre awareness.
+To test these hypotheses, we employed natural language processing (NLP) techniques to analyze verb semantics within individual 
+constructions in narrative and argumentative essays produced by 919 college-level L2 learners with beginner and upper-intermediate 
+proficiency levels. This study investigates whether the previously observed genre effect extends to the semantic cohesion of verbs 
+within individual constructions. Furthermore, it explores whether these genre effects manifest differently across L2 writers with 
+different proficiency levels. Based on usage-based perspectives, we specifically aim to determine whether advanced L2 writers exhibit 
+greater flexibility in their verb choices and semantic relationships across different genres compared to less proficient writers.
+2.2. Contingency of verb–construction mapping in L2 acquisition
+The statistical learning mechanisms underlying L1 acquisition are similarly applicable to L2 acquisition. As L2 learners advance in 
+proficiency, they continually refine and update their knowledge of form–meaning contingencies, resulting in increasingly sophisti­
+cated use of verbs and constructions. A growing body of empirical research supports this pattern, particularly in L2 writing contexts, 
+where higher-proficiency writers tend to use more conventionalized, native-like associations between verbs and constructions (e.g., 
+Ellis & Ferreira-Junior, 2012; Ellis & Larsen-Freeman, 2009; Kim & Hwang, 2022; Kyle & Crossley, 2017; Li & Yu, 2024; Mostafa & 
+Crossley, 2020; R¨omer et al., 2020).
+While these findings demonstrate the strong relationship between L2 writing proficiency and the sophisticated use of 
+verb–construction associations, it is important to note that these analyses predominantly relied on probabilistic measures derived from 
+native speaker usage, such as frequency and association strength. Considering that the acquisition of verb–construction contingencies 
+is also influenced by semantic compatibility, it is hypothesized that L2 learners’ sensitivity to the semantic aspects of verb–construction 
+combinations also plays a crucial role in their writing development.
+Addressing this gap, recent studies have utilized advanced NLP techniques to capture more subtle aspects of semantic compatibility 
+between verbs and constructions. A pivotal study in this regard is Gries and Ellis (2015), which proposed the use of semantic network 
+analysis as a measure of semantic cohesion of verbs within particular constructions (see also Wulff et al., 2007). This method assesses 
+the degree of semantic relatedness among verbs within a given construction, providing insights into how verb semantic clusters are 
+organized around the core meanings of particular constructions in speakers’ mental lexicon (see the Method section for further details).
+Extending this technique to the assessment of L2 writing, the current study explores the semantic characteristics of verbs within 
+individual constructions, aiming to offer a more comprehensive view of the verb–construction mappings that L2 writers develop. 
+Importantly, we investigate verb semantic cohesion across different genres, specifically narrative and argumentative texts, driven by 
+the observation that genre significantly influences linguistic complexity in L2 writing. We hypothesize that while this genre effect will 
+similarly extend to verb semantic cohesion in L2 writing, it will also interact with L2 writing proficiency. In the following section, we 
+provide a brief overview of genre effects in L2 writing and discuss their implications for the use of verbs and constructions.
+2.3. Theoretical perspectives on genre effects in L2 writing
+As a socio-cognitive construct, genre plays an instrumental role in determining linguistic choices and discourse organization 
+(Hyland, 2007; Swales, 1981, 1990). Language users are expected to adopt genre-specific, conventionalized linguistic features that are 
+attuned to particular discourse contexts. In the context of L2 writing, the influence of genre manifests in various linguistic domains, 
+including lexical diversity, syntactic complexity, and rhetorical organization (Biber & Conrad, 2009; Tardy, 2011; Yoon, 2017).
+Central to the current study is the distinction between narrative and non-narrative genres, each fulfilling distinct communicative 
+functions and imposing unique cognitive and linguistic demands on L2 writers (Beers & Nagy, 2009; Berman, 2008; Berman & 
+Nir–Sagiv, 2009; Berman & Slobin, 2013; Ravid & Berman, 2010). Narratives, which recount events or actions in chronological order, 
+often require the use of past tense constructions, action verbs, and temporal sequencing devices (Berman & Nir–Sagiv, 2009; Berman & 
+Slobin, 2013). In contrast, non-narrative genres, such as argumentation, focus on conveying concepts, ideas, or arguments, necessi­
+tating the use of more abstract verbs, longer syntactic structures, and logical connectives to maintain cohesion (Uccelli et al., 2013).
+These requirements can significantly influence the linguistic complexity within texts. A key theoretical framework for under­
+standing such genre-specific linguistic variations is Robinson’s Cognition Hypothesis (2001, 2003). This hypothesis posits that 
+increased cognitive demands lead to greater linguistic complexity. Since non-narrative genres are generally perceived as more 
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+cognitively demanding than narrative genres (Weigle, 2002), the Cognition Hypothesis predicts that non-narrative texts will exhibit 
+higher levels of linguistic complexity.
+2.4. Empirical research on genre effects in L2 writing
+Empirical studies on L2 writing have demonstrated that writers display greater syntactic complexity, sophistication, and use of 
+abstract language in argumentative essays compared to narrative essays (e.g., Kim & Ro, 2024; Lu, 2011; Qin & Uccelli, 2016; 
+Renandya & Nguyen, 2023; Yoon & Polio, 2017; Zhang & Lu, 2022). For instance, Lu (2011) compared syntactic complexity between 
+narrative and argumentative essays written by L1-Chinese L2-English learners. He found that argumentative texts contained longer 
+clauses, a higher frequency of complex nominals, and more coordinate phrases than narrative essays. Similarly, in analyses of narrative 
+and argumentative essays produced by L1-Korean L2-English learners, Kim and Ro (2024) observed that argumentative essays 
+exhibited less frequent verbs and constructions, less frequent verb–construction combinations, stronger associations between verbs 
+and constructions, and a greater variety of construction types.
+The previously observed genre effects on syntactic complexity and sophistication suggest that genre-specific requirements might 
+also extend to the semantic aspects of L2 writing, particularly regarding the semantic cohesion of verbs within constructions. Spe­
+cifically, the functional demands inherent in each genre could influence the selection and distribution of verbs, potentially leading to 
+greater semantic cohesion in argumentative compared to narrative texts. In narrative texts, individual constructions might exhibit 
+lower semantic cohesion due to the variety of verbs used to describe diverse events and character actions. Conversely, argumentative 
+texts might exhibit higher semantic cohesion, with abstract or cognitive verbs clustering more tightly within constructions, reflecting 
+the genre’s emphasis on logical reasoning, evaluation, and stance-taking (Uccelli et al., 2013). Consequently, verbs used in argu­
+mentative texts may form denser semantic networks, sharing more semantic features associated with reasoning, evaluation, or 
+persuasion.
+This hypothesized genre effect may further interact with L2 proficiency to influence the patterns of verb semantic cohesion. More 
+proficient L2 writers are likely to demonstrate greater flexibility in adapting their verb choices to genre-specific constraints, potentially 
+resulting in more pronounced differences in semantic cohesion between narrative and argumentative texts (e.g., Crossley et al., 2016). 
+In contrast, less-proficient writers, with a limited repertoire of verbs and constructions at their disposal and a less developed under­
+standing of genre conventions, are expected to rely more heavily on a limited set of high-frequency verbs across both genres, leading to 
+less distinct patterns of verb semantic cohesion between narrative and argumentative texts.
+3. The current study
+Building on previous research on genre effects in L2 writing and the theoretical frameworks of usage-based approaches and the 
+Cognition Hypothesis, this study investigates how genre and proficiency influence verb semantic cohesion in L2 writing. Given the 
+fundamental role of verbs in structuring discourse (Gentner, 1982; Levin, 1993) and establishing coherence within a text (Gries & Ellis, 
+2015), we hypothesize that the previously observed genre effects on syntactic complexity will extend to verb semantic cohesion. 
+Specifically, we expect argumentative essays to exhibit higher levels of semantic cohesion than narrative essays, due to the increased 
+cognitive demands typically associated with argumentative writing (Robinson, 2001, 2003). Furthermore, we predict that these genre 
+effects will be more pronounced among higher-proficiency writers. This expectation is grounded in usage-based approaches to lan­
+guage learning, which propose that as learners gain more experience with the target language, they develop a more sophisticated 
+understanding of how verbs and constructions function within various communicative contexts (Ellis et al., 2016; Tomasello, 2003).
+To test these hypotheses, the study poses the following research questions: 
+1. To what extent does the semantic cohesion of verbs within individual constructions differ between narrative and argumentative 
+essays?
+2. How does L2 proficiency influence the semantic cohesion of verbs within constructions across genres?
+Table 1 
+Overview of the YELC data.
+Genre
+Proficiency group
+Number of words
+Number of clauses
+Mean
+SD
+Mean
+SD
+Narrative
+Higher (n = 459)
+102.8
+15.5
+15.5
+3.5
+Lower (n = 460)
+80.7
+32.5
+12.9
+5.7
+Argumentative
+Higher (n = 459)
+288.2
+39.6
+44.1
+8.1
+Lower (n = 460)
+156.5
+92.3
+25.7
+15.4
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+4. Method
+4.1. Corpus data
+4.1.1. Corpus description
+We retrieved writing samples from the Yonsei English Learner Corpus (YELC; Rhee & Jung, 2012), which comprised narrative and 
+argumentative essays written by Korean-speaking students at Yonsei University. Each participant supplied one narrative and one 
+argumentative essay, resulting in a total dataset of 1838 writing samples. Table 1 provides a summary of the samples used in the 
+current study, categorized by genre and proficiency group.
+4.1.2. Data collection procedure
+According to the corpus compilers, the data collection process was designed to closely mirror the test administration format of the 
+TOEFL iBT. During data collection, each participant completed computer-based writing tasks within a 1-h session, which included both 
+narrative and argumentative writing tasks. The narrative prompt required students to share personal experiences on familiar topics, 
+such as their favorite high school extracurricular activity or recent travel experiences. On the other hand, the argumentative task 
+required them to engage in academic discourse on specific issues, such as the debate over banning smoking in public places. A complete 
+list of essay topics for each genre is available in Appendix A in the supplementary materials.
+4.1.3. Essay evaluation
+Following the collection of the essays, trained raters, comprising both native English speakers and highly proficient English 
+learners, evaluated each essay using the Common European Framework of Reference (CEFR, Council of Europe, 2011) rubric. Each 
+essay was subsequently stratified into one of the nine proficiency levels: A1, A1+, A2, B1, B1+, B2, B2+, C1, C2. To ensure clear 
+distinctions between proficiency levels, we selected 460 participants from the A1, A1+, and A2 levels and categorized them as the 
+lower-proficiency group, and 459 participants from the B2 and B2+ levels to form the higher-proficiency group.1 According to the 
+CEFR level descriptors, the lower-proficiency group consists of basic or beginner writers who can produce simple sentences on personal 
+topics using basic connectors, express likes and dislikes, and write brief notes about immediate needs. In contrast, the 
+higher-proficiency group consists of independent or upper-intermediate learners who are capable of writing clear, detailed texts on 
+various subjects within their area of expertise, synthesizing information from multiple sources, and effectively expressing opinions 
+while engaging with the views of others.
+4.1.4. Data preparation
+Since our primary focus was on learners’ use of verb types within particular constructions, we corrected spelling errors in the 
+essays, which helped improve verb lemmatization and ensure the accuracy of our automatic analysis (e.g., Zhang & Lu, 2022).
+4.2. Construction identification and verb semantic network analysis
+Before conducting the verb semantic network analysis, we first identified key constructions within the written samples, employing 
+a construction classification algorithm outlined by Hwang et al. (2020). This initial step involved the application of several 
+Python-based NLP tools to analyze and classify construction types in the text samples. The analysis began with sentence segmentation, 
+conducted using the Natural Language Toolkit (NLTK; Bird et al., 2009), an open-source Python library widely used for NLP tasks, 
+available at https://www.nltk.org/. Using NLTK, we decomposed each sample text into individual sentences. Following segmentation, 
+we extracted syntactic features from each sentence using spaCy (Honnibal & Montani, 2019). This extraction process involved a series 
+of tasks: tokenization, which divided sentences into clauses2; lemmatization, which reduced words within each clause to their base or 
+lemma forms; part-of-speech tagging, where each token was labeled with its corresponding syntactic category; and dependency 
+parsing, which identified the syntactic relationships among tokens, capturing the underlying argument structures of each clause.
+Based on the syntactic dependency information obtained from these processes, each clause was classified into one of eleven primary 
+construction types. To ensure a robust and meaningful analysis, we further narrowed our focus to six specific constructions that 
+exhibited high frequency and contained an adequate number of verb instances within the samples, making them suitable for 
+comprehensive network analysis. The classification algorithms for these six constructions are illustrated in (2).
+(2)
+a. Intransitive: [Subject] + [Verb] + (Optional Adverbial Phrase)
+
+b. Intransitive motion: [Subject] + [Verb] + [Path/Location Prepositional Phrase]
+(continued on next page)
+1 While our dataset included essays from C1 and C2 levels, we chose to exclude them from our higher-proficiency group due to the limited number 
+of samples (37 essays at C1 and 2 essays at C2). Including these levels could have introduced unnecessary heterogeneity into our analysis, potentially 
+skewing the results. By focusing on the B2 and B2+ levels in the higher-proficiency group, we ensured a balanced comparison between proficiency 
+groups while maintaining a substantial sample size for statistical analysis.
+2 In this study, we define clauses following the approach used in Kyle (2016), which includes both finite and non-finite clauses. This definition was 
+chosen to capture the characteristics of argument structure constructions, which can manifest in both finite and non-finite forms.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+(continued)
+c. Transitive: [Subject] + [Verb] + [Direct Object] + (Optional Adverbial
+Phrase)
+d. Passive: [Subject] + [Auxiliary Verb] + [Past Participle]
+e. Caused-motion: [Subject] + [Verb] + [Direct Object] + [Path/Location
+Prepositional Phrase]
+f. Ditransitive: [Subject] + [Verb] + [Indirect Object] + [Direct Object].
+The validity of this classification algorithm was confirmed through a comparison with human-annotated classifications, as reported 
+in Hwang et al. (2020).3 This comparison demonstrated high efficacy, achieving a recall of 0.82, precision of 0.86, and an F1 value of 
+0.82. Detailed information about the construction classification algorithms and their applications in research can be found at https:// 
+haerimhwang.github.io/tools/English-constructional-diversity-analyzer.
+For each of the identified constructions, we conducted a semantic network analysis of the verbs used within them, following a 
+structured approach based on Gries and Ellis (2015). We began with verb tokenization using the NLTK package, ensuring a precise 
+identification of verbs across the dataset. For an accurate comparison of semantic properties of verbs, we lemmatized verb forms using 
+the WordNetLemmatizer, which draws on the WordNet lexical database (Pedersen et al., 2004). Subsequently, to explore and quantify 
+the semantic relationships between the lemmatized verbs, we utilized the WordNet Path Similarity measure, which assesses the se­
+mantic similarity between verb synsets on a scale from 0 (no similarity) to 1 (identical synset). Using this similarity data, we con­
+structed undirected graphs for each construction, using the networkx package (Hagberg et al., 2008). In these graphs, nodes 
+represented individual verbs, while edges reflected strong semantic similarities, as determined by the Path Similarity measure. To 
+further elucidate the internal structure of these networks, we applied the Louvain algorithm (Blondel et al., 2008), identifying 
+communities of semantically related verbs and color-coding them for clarity. These visualizations provided a detailed illustration of the 
+overall network structure, highlighting prominent semantic clusters and thus allowing for assessing the semantic cohesion among 
+verbs within each construction (Gries & Ellis, 2015).
+To quantitatively assess verb semantic cohesion within the constructions, we calculated betweenness centrality for each con­
+struction across our sample data. We specifically chose this metric for its distinctive utility among various measures of verb semantic 
+cohesion, including network density, average clustering, closeness centrality, Katz centrality, and degree centrality (Baronchelli et al., 
+2013; de Nooy et al., 2018). Betweenness centrality, grounded in network theory, evaluates the extent to which a particular node (i.e., 
+verb) functions as a crucial bridge within the network, facilitating connections along the shortest paths between other nodes (Freeman, 
+1977; Newman, 2010). This measure is particularly useful for understanding how learners expand constructional knowledge, as verbs 
+with high betweenness centrality facilitate integrating new verbs into existing patterns. Moreover, focusing on this metric allows for 
+meaningful comparisons with previous studies that have employed it (e.g., Ellis et al., 2013; Ellis & Ferreira-Junior, 2009; Gries & Ellis, 
+2015).
+A verb network exhibiting high betweenness centrality values indicates that certain verbs play a pivotal role as semantic anchors, 
+linking disparate parts of the network. This connectivity enhances the overall coherence and cohesion of the semantic structure within 
+the text (Gries & Ellis, 2015). The betweenness centrality of a node v is calculated using the following formula: 
+CB(v) =
+∑
+{s∕=v∕=t}
+σst(v)
+σst 
+• s and t are different nodes in the graph, distinct from v
+• σst represents the total number of shortest paths from node s to node t
+• σst(v) represents the number of those shortest paths that pass through node v
+4.3. Statistical analysis
+To investigate the potential effects of genre and proficiency on verb semantic cohesion, we employed a linear mixed-effects 
+regression model (Bates et al., 2015) to estimate betweenness centrality values conditioned by the interaction of two fixed effects: 
+genre (argumentative, narrative) and proficiency group (higher, lower). Each fixed factor was deviation-coded, with −0.5 assigned to 
+argumentative essays and the higher group, and 0.5 assigned to narrative essays and the lower group. The model also included 
+participants and constructions as random effects to account for individual variability and construction-specific influences. We initially 
+constructed the maximal random effects structure, including by-participant and by-construction random slopes and intercepts for 
+genre and proficiency group. However, due to issues with non-convergence, we simplified the model by removing the by-construction 
+random slope. P-values were derived using the Satterthwaite approximation via the lmerTest package (Kuznetsova et al., 2016). In case 
+3 Since Hwang et al. (2020) validated their classification accuracy using the American National Corpus, which contains native English writing, 
+their results may not directly apply to our learner data. To address this concern, we extracted a random sample of 100 sentences from our dataset 
+and compared the automatic analysis results with human annotations. This analysis yielded high accuracy rates, with a recall of 0.96, a precision of 
+0.97, and an F1 value of 0.96. These results indicate that the automatic analysis tool performs well on our L2 learner corpus as well.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+of a significant interaction between genre and proficiency, we further conducted pairwise comparisons using the emmeans package 
+(Lenth, 2018). Tukey adjustments were applied to account for multiple comparisons. All statistical modeling was performed using R 
+version 4.3.3 (R Core Team, 2024).
+5. Results
+Table 2 provides the descriptive statistics for the betweenness centrality values across the different genre and proficiency groups, 
+followed by a jitter plot in Fig. 1.
+The descriptive statistics revealed an opposite trend between the two proficiency groups. Specifically, for the higher-proficiency 
+group, betweenness centrality values were notably higher in the argumentative compared to the narrative genre, whereas the 
+lower-proficiency group exhibited higher values in the narrative genre.
+To scrutinize these patterns in detail, we turned to the results of the mixed-effects model, which are summarized in Table 3.
+The results showed significant effects of both genre and proficiency on betweenness centrality values. The genre effect was driven 
+by generally higher betweenness centrality values in argumentative compared to narrative genres. The proficiency effect was due to 
+higher values among the higher-proficiency group compared to the lower-proficiency group. Crucially, there was a significant 
+interaction between genre and proficiency. Pairwise comparisons showed distinct patterns across the proficiency groups. The higher- 
+proficiency group exhibited significantly higher betweenness centrality values in argumentative than narrative genres (b = 0.00003, 
+SE = 0.000005, p < .001), indicating increased verb semantic cohesion in their argumentative essays. In contrast, for the lower- 
+proficiency group, there was no significant difference between argumentative and narrative genres (b = −0.00001, SE = 0.00005, 
+p = .101), suggesting that this group maintained similar degrees of verb semantic cohesion across both genres.
+Consistent with these statistical findings, the semantic networks for each construction show distinct patterns between argumen­
+tative and narrative essays across proficiency levels. A comprehensive overview of the semantic networks for all constructions is 
+provided in Appendix B. To illustrate these patterns in detail, we present specific examples from the passive construction, which 
+generally features a high level of linguistic sophistication and thus serves as an effective indicator of writing proficiency.
+Figs. 2 and 3 illustrate the verb semantic networks for passive sentences in argumentative essays produced by the higher- 
+proficiency group, presenting both the complete and reduced versions. The intricate interconnections of verbs within the argumen­
+tative network (Fig. 2) suggest that higher-proficiency writers utilized a complex set of semantically related verbs when constructing 
+arguments in the passive voice. This network, characterized by high semantic density and cohesion, reflects the specific demands of 
+argumentative writing, which requires the articulation, support, and refutation of various stances. In the reduced version of this 
+network (Fig. 3), which includes only three nodes from each community, verbs such as “allow,” “permit,” “protect,” “restrict,” and 
+“support” further highlight the analytical and often confrontational nature of argumentation.
+In contrast, the semantic network for narrative essays produced by this group features a more streamlined array of verbs, char­
+acterized by lower semantic density and reduced cohesion, as shown in Fig. 4. Unlike the argumentative network, where clear clusters 
+of related verbs emerge, the narrative network exhibits a simpler structure, with semantic relationships centered around more basic 
+and concrete actions. This linear organization reflects the sequential and event-driven nature of storytelling, where the narrative 
+unfolds through the progression of events and the depiction of specific actions and experiences. For example, this network is domi­
+nated by semantically light verbs such as “get,” “take,” “call,” and “move,” emphasizing the focus on personal experiences and actions 
+that are central to narrative discourse. As a result, this network demonstrates less density, indicating the genre-specific differences in 
+verb usage and semantic cohesion among the higher-proficiency group.
+The higher-proficiency group’s ability to differentiate their verb usage in the passive construction depending on genre is clearly 
+illustrated in the sample writing provided in Table 4. In this writer’s argumentative essay, the passive constructions include verbs such 
+as “eclipsed,” “notified,” “protected,” and “used,” which are examples of more sophisticated and abstract verbs typically associated 
+with argumentative discourse. The use of these verbs indicates the writer’s effort to present and critically analyze different viewpoints, 
+a hallmark of the complex and analytic nature of argumentative writing. In the narrative sample, in contrast, the same writer produced 
+passive sentences involving verbs such as “permitted,” “called,” and “told” to describe personal experiences and situations focusing on 
+the writer. This choice reflects a common rhetorical strategy in narrative writing, where the focus shifts to personal storytelling. 
+Beyond verb selection, this writer also exhibited an understanding of the different functions of passive sentences across genres. In the 
+argumentative essay, passives were strategically used to depersonalize statements, potentially enhancing the persuasiveness of the 
+argument. Conversely, in the narrative sample, passives were utilized to highlight experiences and emotions, which could increase the 
+reader’s empathy and engagement with the personal story being conveyed. These distinctions suggest the writer’s ability to adapt the 
+use of passive voice according to the genre, adjusting their linguistic choices to align with the specific communicative goals of 
+Table 2 
+Descriptive statistics.
+Genre
+Proficiency group
+Betweenness centrality
+Mean
+SD
+Narrative
+Higher (n = 459)
+0.000077
+0.000187
+Lower (n = 460)
+0.000060
+0.000174
+Argumentative
+Higher (n = 459)
+0.000109
+0.000261
+Lower (n = 460)
+0.000049
+0.000156
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+argumentation and narration.
+Turning to the lower-proficiency group, the semantic networks for passive verbs are shown in Fig. 5 for argumentative essays and 
+Fig. 6 for narrative essays. Compared to the higher-proficiency group, the difference in both the size and complexity of the networks 
+between argumentative and narrative essays is less pronounced. While the argumentative network is still larger than the narrative 
+network, both networks contain a more limited range of verbs compared to those of the higher-proficiency group. In particular, the 
+argumentative network does not exhibit the same level of verb density and semantic clustering observed in the higher-proficiency 
+group. This reduced distinction between verbs used in argumentative and narrative contexts reflects the lower-proficiency group’s 
+tendency to rely on a more limited and generalized set of verbs across both genres. For instance, basic verbs such as “give,” “use,” “go,” 
+and “take” appear frequently in both networks, indicating a more uniform approach to verb usage in passive constructions, regardless 
+of the writing genre. This observation suggests that the lower-proficiency group may not have fully developed the ability to differ­
+entiate and adapt their verb usage according to the specific rhetorical demands of argumentative versus narrative writing.
+To illustrate the less pronounced distinction between the two genres in the lower-proficiency group, we analyzed sample passive 
+sentences from a writer in this group, as presented in Table 5. Unlike the higher-proficiency learners, this writer does not demonstrate a 
+significant differentiation in the use of passive voice between argumentative and narrative genres. The range of verbs employed in 
+passive constructions is notably limited, and there are noticeable grammatical errors in both the formation of passives and the overall 
+sentence structure, which are typical of lower-proficiency learners. Moreover, the strategic use of passive constructions to enhance 
+rhetorical effect in argumentation or to emphasize an experiential focus in narration is less evident, falling short of increasing the 
+persuasiveness of arguments or the vividness of narrative descriptions.
+6. Discussion
+The primary objective of the current study was to investigate the effect of genre on the semantic cohesion of verbs within con­
+structions in L2 writing, along with its potential interaction with L2 writing proficiency. By employing a semantic network analysis 
+that focused on verbs within various constructions across argumentative and narrative genres, we found that each proficiency group 
+exhibited distinct patterns in verb semantic networks across genres.
+6.1. Summary of findings
+In the higher proficiency group, there was a marked contrast between argumentative and narrative essays. Argumentative essays 
+exhibited stronger semantic cohesion, characterized by denser and more interconnected verb networks. These networks included a 
+Fig. 1. Betweenness centrality values across genre and proficiency groups.
+Table 3 
+Results of mixed-effects regression.
+ß
+SE
+t
+p
+(Intercept)
+0.00007
+0.00003
+2.314
+0.069
+Genre
+−0.00001
+0.000004
+−2.780
+0.005a
+Proficiency
+−0.00004
+0.000004
+−10.447
+<0.001b
+Genre × Proficiency
+0.00004
+0.000007
+6.019
+<0.001b
+a p < .01.
+b p < .001.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+wide range of sophisticated verbs associated with analysis, judgment, and persuasion, reflecting the analytic characteristics of 
+argumentative discourse. In contrast, narrative essays demonstrated lower semantic cohesion, with more streamlined networks 
+featuring concrete actions and experiential verbs, consistent with the more straightforward and event-driven nature of storytelling.
+Unlike the higher-proficiency group, the lower-proficiency group showed less pronounced differentiation between genres, relying 
+on a more restricted range of verbs in both argumentative and narrative writing. Their verb semantic networks were simpler and less 
+distinct between genres, suggesting a diminished ability to adapt verb usage to the specific rhetorical demands and objectives of each 
+genre.
+6.2. Theoretical implications
+The distinct verb usage patterns across genres in the higher-proficiency group align with previous research on genre effects in L2 
+writing (e.g., Lu, 2011; Qin & Uccelli, 2016; Renandya & Nguyen, 2023; Yoon, 2017; Yoon & Polio, 2017; Zhang & Lu, 2022). For 
+example, Yoon and Polio (2017) found that L2 learners at a U.S. university used more complex syntactic structures in argumentative 
+essays compared to narrative ones, particularly in terms of clause length, coordinate phrases, complex nominals, and verb phrases. The 
+current study adds a new dimension to this line of research by extending the investigation of genre effects to verb semantic cohesion in 
+writing. While previous studies have predominantly focused on syntactic and lexical complexity, relatively less attention has been paid 
+to the semantic aspects of writing. In this regard, our study contributes to the field by highlighting the importance of semantic con­
+siderations, particularly in relation to verb usage and semantic cohesion, thus offering a more comprehensive understanding of genre 
+effects in L2 writing.
+The differences in verb semantic cohesion between the two genres among the higher-proficiency group can be interpreted within 
+the framework of Robinson’s Cognition Hypothesis (Robinson, 2001, 2005). According to this hypothesis, increased task complexity 
+leads to greater linguistic complexity and accuracy in language production. In line with this view, the higher-proficiency writers 
+exhibited greater verb semantic cohesion in argumentative writing, which imposes greater task complexity compared to narrative 
+writing. Specifically, argumentative writing requires multifaceted analytic processes, including logical reasoning, evidence evaluation, 
+and persuasive rhetoric, rendering it a more cognitively complex task than narrative writing (Swales, 1990; Uccelli et al., 2013). Our 
+findings of denser and more interconnected verb networks in the argumentative essays of higher-proficiency writers suggest that these 
+learners effectively adjusted their writing style to meet the increased cognitive demands of the genre by employing more sophisticated 
+language. This pattern also reflects their strategic use of verbs to enhance rhetorical effect and maintain an objective tone in 
+Fig. 2. Semantic network for passive sentences in argumentative essays by the higher-proficiency group.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+Fig. 3. Reduced semantic network for passive sentences in argumentative essays by the higher-proficiency group, including only three nodes from 
+each community.
+Fig. 4. Semantic network for passive sentences in narrative essays by the higher-proficiency group.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+argumentation. These results indicate that higher-proficiency writers were not only capable of handling the cognitive complexity of 
+argumentative writing but also demonstrated an awareness of the distinct linguistic features required for different communicative 
+purposes in each genre, aligning with insights from genre-based studies (Biber & Conrad, 2009; Tardy, 2011).
+Moreover, the modulation of proficiency is consistent with a usage-based perspective on language learning (Ellis, 2006, 2008; 
+Goldberg, 1995, 1999; Tomasello, 2003). The more pronounced genre differentiation observed among higher proficiency writers likely 
+reflects their greater exposure to and practice with a variety of text types. This finding aligns with the usage-based principle that 
+language learning is fundamentally driven by the frequency and variability of input. Higher proficiency writers, having encountered a 
+wider array of verbs and constructions across diverse examples of argumentative and narrative texts, have developed more distinct and 
+sophisticated verb usage patterns appropriate for each genre. This genre-specific adaptation suggests their robust understanding of 
+how verbs and constructions co-occur and function in different communicative contexts, reflecting a higher degree of entrenchment 
+and abstraction of these linguistic patterns (Bybee, 2006).
+In contrast, the less differentiated verb usage among the lower-proficiency group can be attributed to their less developed sensi­
+tivity to verb–construction contingencies, presumably due to their more limited language experience. Furthermore, the less distinct 
+semantic cohesion across genres indicates that these writers have not yet fully internalized the genre-specific conventions that guide 
+the effective utilization of verbs and constructions in each genre. From a usage-based perspective, this finding aligns with the view that 
+sensitivity to such contingencies develops gradually through repeated exposure and use in varied contexts (Tomasello, 2003). As these 
+Table 4 
+Examples of passive sentences produced by a higher-proficiency writer (grammatical and spelling errors uncorrected).
+Participant ID 
+(proficiency level)
+Argumentative
+Narrative
+#2611 (B2+)
+- But their statement is eclipsed by the following reasons I would mention below.
+-Then, critics say that if we engage people into experiment who agreed to be a part 
+of the experiment after they were fully notified about the dangers of the 
+experiment, there would be no problem.
+-These reality renders the fact that the argument of maintaining that animal 
+should be protected from being used in medical experiment is unreasonable and 
+my statement that it is proper to practice animal experiment truly convincing.
+-I thankfully could get permitted in Yonsei 
+University majoring in Medicine.
+-And I’m quite positive that this story would be 
+surely enough to be called a miracle.
+-However, when I was told that I should take an 
+English Certification Test, I became really afraid.
+Fig. 5. Semantic network for passive sentences in argumentative essays by the lower-proficiency group.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+writers gain more language experience, it is expected that they will develop a keener awareness of how verbs and constructions work 
+together to convey meaning and achieve communicative goals in different genres. This progression should lead to more differentiated 
+and complex verb semantic networks as their proficiency increases.
+6.3. Pedagogical implications
+The current findings have several implications for L2 writing instruction and assessment practices, particularly in evaluating the 
+semantic aspects of writing. First, our results indicate that verb semantic analysis can supplement traditional assessment measures that 
+focus on syntactic complexity and sophistication. By incorporating measures of semantic cohesion—specifically related to verb usage 
+within constructions—educators can provide a more comprehensive and refined evaluation of a learner’s writing proficiency. Notably, 
+our study introduces useful resources for the automatic analysis of verb semantic cohesion using NLP techniques, implemented 
+through a Python script. This automated process allows for a fast and accurate assessment of students’ verb usage across different 
+writing contexts, offering an efficient tool for educators to evaluate and monitor students’ writing progress in greater detail.
+Second, the study highlights the importance of genre-specific evaluation in writing assessments (e.g., Yoon, 2017). We propose that 
+writing assessments should explicitly measure a learner’s ability to adapt their verb usage to meet the distinct demands of various 
+genres. For example, in argumentative essays, evaluators should assess the use of sophisticated verbs that convey analysis, judgment, 
+and persuasion, ensuring these verbs are effectively embedded within relevant constructions to strengthen the arguments. In contrast, 
+narrative writing should be assessed based on the effective use of action and experiential verbs that clearly describe events and 
+experiences.
+Third, the observed differences between proficiency groups suggest that genre-specific sensitivity to verb–construction contin­
+gencies develops gradually along a continuum. This finding highlights the need for differentiated teaching approaches that align with 
+students’ proficiency levels. For lower-proficiency students, for instance, instruction may begin by focusing on basic verbs that express 
+the core meanings of the constructions in which they are used. As students become more comfortable with these prototypical patterns, 
+Fig. 6. Semantic network for passive sentences in narrative essays by the lower-proficiency group.
+Table 5 
+Examples of passive sentences produced by a lower-proficiency writer (grammatical and spelling errors uncorrected).
+Participant ID 
+(proficiency level)
+Argumentative
+Narrative
+#2998 (A2)
+-So that could make us to be called ‘polite eastern nation’ from another 
+countries.
+-About 300–400 years ago, when ‘Josun Kingdom’ was in this land, our 
+ancesters were punished by a physical punishment from the elders in 
+‘seodang’.
+-And that will give them a perception that the action should not be done again.
+-The best interesting thing that happened in last 
+summer vacation was occurred in my highschool.
+-Suddenly very loud sound was heard continually.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+they can gradually be introduced to more complex verb–construction pairings and their appropriate use within specific genres. For 
+advanced learners, instruction should incorporate exercises that challenge them to adjust their verb usage to meet the rhetorical 
+demands of different genres. These activities can help foster a more sophisticated understanding of how verbs function within diverse 
+communicative contexts. Such tailored instruction, which considers students’ current abilities, may ultimately enable them to make 
+deliberate, genre-appropriate choices in their verb usage.
+Alongside instruction, assessment practices should be refined to better capture this developmental progression. Educators could 
+develop detailed rubrics that describe different levels of sensitivity to verb–construction contingencies, from basic use of common 
+verbs to more sophisticated, genre-appropriate applications of a broad range of verbs within varied constructions. By implementing 
+regular assessments that track students’ progress in developing these skills, teachers can more effectively guide learners through their 
+long-term development. This approach will allow students to build a more contextually appropriate understanding of verb usage, 
+gradually refining their ability to apply verbs strategically across different genres.
+6.4. Limitations and suggestions for further research
+We note several limitations that require further attention in future studies. First, a potential limitation stems from the presence of 
+underdeveloped essays and grammatical errors in our corpus data. As is common in L2 writing research, we encountered several essays 
+containing incomplete sentences and various linguistic inaccuracies. Given the lack of established conventions for handling such errors 
+in semantic cohesion analysis, we chose to maintain the integrity of the original data, making only minor corrections for spelling errors 
+in verbs. However, as noted by a reviewer, the inclusion of underdeveloped essays may have influenced our findings. This limitation 
+points to the need for future research to develop standardized protocols for addressing incomplete or grammatically incorrect texts in 
+semantic analyses of L2 writing.
+Moreover, further studies should implement rigorous inter-rater reliability measures to ensure the consistency and validity of 
+proficiency ratings. Although the essays in our dataset were evaluated by trained raters using CEFR rubrics as part of the corpus 
+compilation process, no inter-rater agreement information was provided by the compilers. Incorporating multiple independent ratings 
+for each essay would strengthen the reliability of these assessments, allowing for a more accurate and comprehensive evaluation of 
+proficiency.
+Another limitation of our study is its limited scope. By focusing on only two genres and exclusively examining Korean L2 learners of 
+English, the generalizability of our findings is somewhat restricted. To address this limitation, future research should consider a wider 
+range of genres and include a more diverse sample of L2 learners from different L1 backgrounds, using a more fine-grained proficiency 
+scale. These expansions would enhance the validity and generalizability of the results, offering deeper insights into how verb semantic 
+cohesion manifests across different linguistic and cultural contexts in L2 writing.
+7. Conclusion
+This study investigated how genre and proficiency influence verb semantic cohesion in L2 writing, using NLP-based semantic 
+network analysis of essays by Korean learners. Our findings have important implications for L2 writing instruction and assessment, 
+suggesting that writing instruction should incorporate a focus on verb–construction contingencies, particularly within genre-based 
+approaches. Additionally, the findings point to the need for more refined evaluation criteria in writing assessment that capture the 
+complexity of verb usage and semantic cohesion across genres. To further generalize our findings, future research should examine 
+whether the observed patterns apply to L2 production across various genres and learners with different L1 backgrounds.
+CRediT authorship contribution statement
+Hyunwoo Kim: Writing – review & editing, Writing – original draft, Methodology, Investigation, Data curation, Conceptualization. 
+Woonhyung Chung: Writing – review & editing, Validation, Methodology, Investigation. Heechung Nam: Writing – review & 
+editing, Validation, Software, Methodology, Investigation.
+Declaration of interest
+The authors declare no conflict of interest.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi.org/10.1016/j.system.2025.103657.
+References
+Abdi Tabari, M., & Wang, Y. (2022). Assessing linguistic complexity features in L2 writing: Understanding effects of topic familiarity and strategic planning within the 
+realm of task readiness. Assessing Writing, 52, Article 100605.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+Ambridge, B. (2013). How do children restrict their linguistic generalizations? An (un-)grammaticality judgment study. Cognitive Science, 37, 508–543.
+Ambridge, B., Bidgood, A., Twomey, K. E., Pine, J. M., Rowland, C. F., & Freudenthal, D. (2015). Preemption versus entrenchment: Towards a construction-general 
+solution to the problem of the retreat from verb argument structure overgeneralization. PLoS One, 10, Article e0123723.
+Baronchelli, A., Ferrer-i-Cancho, R., Pastor-Satorras, R., Chater, N., & Christiansen, M. H. (2013). Networks in cognitive science. Trends in Cognitive Sciences, 17, 
+348–360.
+Bates, D., M¨achler, M., Bolker, B., & Walker, S. (2015). Fitting linear mixed-effects models using lme4. Journal of Statistical Software, 67, 1–48.
+Beers, S. F., & Nagy, W. E. (2009). Syntactic complexity as a predictor of adolescent writing quality: Which measures? Which genre? Reading and Writing, 22, 185–200.
+Berman, R. A. (2008). The psycholinguistics of developing text construction. Journal of Child Language, 35, 735–771.
+Berman, R. A., & Nir–Sagiv, B. (2009). Clause-packaging in narratives: A crosslinguistic developmental study. In D. I. Slobin, J. Guo, E. Lieven, S. Ervin– Tripp, 
+N. Budwig, S. ¨Ozçalis¸kan, & K. Nakamura (Eds.), Crosslinguistic approaches to the psychology of language: Research in the tradition (pp. 149–162). Mahwah, NJ: 
+Lawrence Erlbaum. 
+Berman, R. A., & Slobin, D. I. (2013). Relating events in narrative: A crosslinguistic developmental study. New York: Psychology Press. 
+Biber, D., & Conrad, S. (2009). Register, genre, and style. Cambridge, UK: Cambridge University Press. 
+Biber, D., Gray, B., & Staples, S. (2016). Predicting patterns of grammatical complexity across language exam task types and proficiency levels. Applied Linguistics, 37, 
+639–668.
+Bird, S., Klein, E., & Loper, E. (2009). Natural Language processing with Python: Analyzing text with the Natural Language Toolkit. O’Reilly. 
+Blondel, V. D., Guillaume, J.-L., Lambiotte, R., & Lefebvre, E. (2008). Fast unfolding of communities in large networks. Journal of Statistical Mechanics, Article P10008.
+Bult´e, B., & Housen, A. (2012). Defining and operationalising L2 complexity. In A. Housen, F. Kuiken, & F. Vedder (Eds.), Dimensions of L2 performance and proficiency: 
+Complexity, accuracy and fluency in SLA (pp. 21–46). Amsterdam: John Benjamins. 
+Bybee, J. (2008). Usage-based grammar and second language acquisition. In P. Robinson, & N. C. Ellis (Eds.), Handbook of cognitive linguistics and second language 
+acquisition (pp. 216–236). New York: Routledge. 
+Casal, J. E., & Kessler, M. (2020). Form and rhetorical function of phrase-frames in promotional writing: A corpus-and genre-based analysis. System, 95, Article 
+102370.
+Council of Europe. (2011). Common European framework of reference for languages. Learning, teaching, assessment. Council of Europe. 
+Crossley, S. A., & McNamara, D. S. (2012). Predicting second language writing proficiency: The roles of cohesion and linguistic sophistication. Journal of Research in 
+Reading, 35, 115–135.
+de Nooy, W., Mrvar, A., & Batagelj, V. (2018). Exploratory social network analysis with Pajek: Revised and expanded edition for updated software. Cambridge, UK: 
+Cambridge University Press. 
+Ellis, N. C. (2002). Frequency effects in language processing: A review with implications for theories of implicit and explicit language acquisition. Studies in Second 
+Language Acquisition, 24, 143–188.
+Ellis, N. C. (2006). Selective attention and transfer phenomena in SLA: Contingency, cue competition, salience, interference, overshadowing, blocking, and perceptual 
+learning. Applied Linguistics, 27, 1–31.
+Ellis, N. C. (2008). The dynamics of language use, language change, and first and second language acquisition. The Modern Language Journal, 41, 232–249.
+Ellis, N. C., & Ferreira-Junior, F. (2009). Constructions and their acquisition: Islands and the distinctiveness of their occupancy. Annual Review of Cognitive Linguistics, 
+7, 188–221.
+Ellis, N. C., & Larsen-Freeman, D. (2009). Constructing a second language: Analyses and computational simulations of the emergence of linguistic constructions from 
+usage. Language Learning, 59, 90–125.
+Ellis, N. C., O’Donnell, M. B., & R¨omer, U. (2013). Usage-based language: Investigating the latent structures that underpin acquisition. Language Learning, 63, 25–51.
+Freeman, L. C. (1977). A set of measures of centrality based on betweenness. Sociometry, 40, 35–41.
+Gentner, D. (1982). Why nouns are learned before verbs: Linguistic relativity versus natural partitioning. In S. A. Kuczaj (Ed.), Language development: Vol. 2. Language, 
+thought, and culture (pp. 301–334). Lawrence Erlbaum Associates. 
+Goh, C., & Burns, A. (2012). Teaching speaking: A holistic approach. New York, NY: Cambridge University Press. 
+Goldberg, A. E. (1995). Constructions: A construction grammar approach to argument structure. London: University of Chicago Press. 
+Goldberg, A. (1999). The emergence of the semantics of argument structure construction. In B. MacWhinney (Ed.), The emergence of language (pp. 197–212). Hillsdale, 
+NJ: Lawrence Erlbaum. 
+Goldberg, A. E. (2006). Constructions at work: The nature of generalization in language. Oxford: University Press. 
+Goldberg, A. E. (2019). Explain me this: Creativity, competition and the partial productivity of constructions. Princeton, NJ: Princeton University Press. 
+Goldberg, A. E., Casenhiser, D. M., & Sethuraman, N. (2004). Learning generalizations. Cognitive Linguistics, 15, 289–316.
+Gries, S. T., & Ellis, N. C. (2015). Statistical measures for usage-based linguistics. Language Learning, 65, 228–255.
+Hagberg, A. A., Schult, D. A., & Swart, P. J. (2008). Exploring network structure, dynamics, and function using NetworkX. In G. Varoquaux, T. Vaught, & K. J. Millman 
+(Eds.), Proceedings of the 7th Python in science conference (pp. 11–15).
+Honnibal, M., & Montani, I. (2019). spaCy 2: Natural language understanding with bloom embeddings, convolutional neural networks and incremental parsing 
+Version 2.0.18. https://spacy.io. January 2021.
+Huang, L., & Li, Y. (2023). Revisiting the relationships of n-gram measures to L2 writing proficiency: Comparisons between genres and connections to vocabulary 
+levels. System, 118, Article 103136.
+Hwang, H., Choe, A., & Zenker, F. (2020). Construction counter: A tool to measure (nonnative) language development. Brown Bag Series. University of Hawai‘i at 
+M¯anoa.
+Hyland, K. (2007). Genre pedagogy: Language, literacy and L2 writing instruction. Journal of Second Language Writing, 16, 148–164.
+Kang, S., & Lee, J. H. (2019). Are two heads always better than one? The effects of collaborative planning on L2 writing in relation to task complexity. Journal of 
+Second Language Writing, 45, 61–72.
+Kim, H., & Hwang, H. (2022). Assessing verb-construction integration in young learners of english as a foreign language: Analyses of written and spoken production. 
+Language Learning, 72, 497–533.
+Kim, H., & Ro, E. (2024). Usage-based approaches to assessing syntactic sophistication in second language writing: Interaction of genre and proficiency. Journal of 
+Second Language Writing, 65, 101131.
+Kormos, J. (2011). Task complexity and linguistic and discourse features of narrative writing performance. Journal of Second Language Writing, 20, 148–161.
+Kuznetsova, A., Brockhoff, P. B., & Christensen, R. H. B. (2016). lmerTest: Tests in linear mixed effects models.
+Kyle, K. (2016). Measuring syntactic development in L2 writing: Fine grained indices of syntactic complexity and usage-based indices of syntactic sophistication. Georgia State 
+University. Unpublished doctoral dissertation.
+Kyle, K., & Crossley, S. (2017). Assessing syntactic sophistication in L2 writing: A usage-based approach. Language Testing, 34, 513–535.
+Lenth, R. (2018). emmeans: Estimated marginal means, aka least-square means: R package [computer software]. Available at: version 1.2.4. https://cran.r-project. 
+org/package=emmeans.
+Levin, B. (1993). English verb classes and alternations: A preliminary investigation. University of Chicago Press. 
+Li, H., & Yu, X. (2024). Verb argument constructions in argumentative essays by college-level Asian learners of English: Exploring the effects of English proficiency, 
+acquisition context, and topic. Journal of Second Language Writing, 65, Article 101127.
+Lu, X. (2011). A corpus-based evaluation of syntactic complexity measures as indices of college-level ESL writers’ language development. Tesol Quarterly, 45, 36–62.
+Lu, X. (2017). Automated measurement of syntactic complexity in corpus-based L2 writing research and implications for writing assessment. Language Testing, 34, 
+493–511.
+Mostafa, T., & Crossley, S. A. (2020). Verb argument construction complexity indices and L2 writing quality: Effects of writing tasks and prompts. Journal of Second 
+Language Writing, 49. Article 100730.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657
+Newman, M. E. J. (2010). Networks: An introduction. Oxford, UK: Oxford University Press. 
+Ninio, A. (1999). Pathbreaking verbs in syntactic development and the question of prototypical transitivity. Journal of Child Language, 26, 619–653.
+Norris, J. M., & Ortega, L. (2009). Towards an organic approach to investigating CAF in SLA: The case of complexity. Applied Linguistics, 30, 555–578.
+O’Donnell, M. B., R¨omer, U., & Ellis, N. C. (2013). The development of formulaic sequences in first and second language writing: Investigating effects of frequency, 
+association, and native norm. International Journal of Corpus Linguistics, 18, 83–108.
+Pedersen, T., Patwardhan, S., & Michelizzi, J. (2004). WordNet::Similarity–Measuring the relatedness of concepts. Paper presented at the proceedings of fifth annual 
+meeting of the north American chapter of the association of computational linguistics (NAACL 2004).
+Perek, F., & Goldberg, A. E. (2017). Linguistic generalization on the basis of function and constraints on the basis of statistical preemption. Cognition, 168, 276–293.
+Pu, L., Heng, R., & Cao, C. (2022). The effects of genre on the syntactic complexity of argumentative and expository writing by Chinese EFL learners. Frontiers in 
+Psychology, 13, Article 1047117.
+Qin, W., & Uccelli, P. (2016). Same language, different functions: A cross-genre analysis of Chinese efl learners’ writing performance. Journal of Second Language 
+Writing, 33, 3–17.
+R Core Team. (2024). R: A language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing. http://www.R-project.org/. 
+Ravid, D., & Berman, R. A. (2010). Developing noun phrase complexity at school age: A text-embedded cross-linguistic analysis. First Language, 30, 3–26.
+Renandya, W. A., & Nguyen, M. T. T. (2023). Teaching speaking in L2 contexts. In E. Hinkel (Ed.), Handbook of practical second language teaching and learning (pp. 
+269–280). New York, NY: Routledge. 
+Rhee, S. C., & Jung, C. K. (2012). Yonsei English learner corpus (YELC). Paper presented at the first Yonsei English corpus symposium. March.
+Robenalt, C., & Goldberg, A. E. (2015). Judgement evidence for statistical preemption: It is relatively better to vanish than to disappear a rabbit, but a lifeguard can 
+equally well backstroke or swim children to shore. Cognitive Linguistics, 26, 467–503.
+Robinson, P. (2001). Task complexity, task difficulty, and task production: Exploring interactions in a componential framework. Applied Linguistics, 22, 27–57.
+Robinson, P. (2003). The cognition hypothesis, task design, and adult task-based language learning. Second Language Studies, 21, 45–105.
+Robinson, P., & Ellis, N. (2008). An introduction to cognitive linguistics, second language acquisition, and language instruction. In P. Robinson, & N. Ellis (Eds.), 
+Handbook of cognitive linguistics and second language acquisition (pp. 3–24). New York: Routledge. 
+R¨omer, U., Skalicky, S. C., & Ellis, N. C. (2020). Verb-argument constructions in advanced L2 English learner production: Insights from corpora and verbal fluency 
+tasks. Corpus Linguistics and Linguistic Theory, 16, 303–331.
+Swales, J. M. (1981). Aspects of article introductions: Language studies unit. Birmingham: University of Aston. 
+Swales, J. (1990). Genre analysis: English in academic and research settings. New York: Cambridge University Press. 
+Tardy, C. M. (2011). The history and future of genre in second language writing. Journal of Second Language Writing, 20, 1–5.
+Tomasello, M. (2003). Constructing a language: A usage-based theory of language acquisition. Cambridge, MA: Harvard University Press. 
+Uccelli, P., Dobbs, C. L., & Scott, J. (2013). Mastering academic language: Organization and stance in the persuasive writing of high school students. Written 
+Communication, 30, 36–62.
+Weigle, S. C. (2002). Assessing writing. Cambridge, UK: Cambridge University Press. 
+Wolf-Quintero, K., Inagaki, S., & Kim, H. Y. (1998). Second language development in writing: Measures of fluency, accuracy, & complexity. Honolulu: University of Hawaii 
+Press. 
+Wulff, S., Stefanowitsch, A., & Gries, S. T. (2007). Brutal Brits and persuasive Americans: Variety-specific meaning construction in the into-causative. In G. Radden, K.- 
+M. K¨opcke, T. Berg, & P. Siemund (Eds.), Aspects of meaning construction (pp. 265–281). Amsterdam: John Benjamins. 
+Yoon, H. J. (2017). Investigating the interactions among genre, task complexity, and proficiency in L2 writing: A comprehensive text analysis and study of learner perceptions. 
+Michigan State University. Unpublished doctoral dissertation.
+Yoon, H. J., & Polio, C. (2017). The linguistic development of students of English as a second language in two written genres. Tesol Quarterly, 51, 275–301.
+Zhang, X., & Lu, X. (2022). Revisiting the predictive power of traditional vs. fine-grained syntactic complexity indices for L2 writing quality: The case of two genres. 
+Assessing Writing, 51, Article 100597.
+H. Kim et al.                                                                                                                                                                                                            
+System 131 (2025) 103657

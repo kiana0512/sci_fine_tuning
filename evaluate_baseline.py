@@ -42,7 +42,7 @@ def generate_prediction(model, tokenizer, prompt, max_new_tokens=3):
 
 def main():
     base_model_path = "./gemma_local"
-    data_path = "./processed/context_split"
+    data_path = "./processed/definition_split"
     dataset = load_from_disk(data_path)["validation"]
 
     tokenizer = AutoTokenizer.from_pretrained(base_model_path, trust_remote_code=True)
