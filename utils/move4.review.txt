@@ -1,0 +1,130 @@
+2 PUBLICATIONS   3 CITATIONS   
+SEE PROFILE
+Jayakaran Mukundan
+Taylor's University
+138 PUBLICATIONS   1,848 CITATIONS   
+SEE PROFILE
+All content following this page was uploaded by Hui Geng on 05 June 2024.
+The user has requested enhancement of the downloaded file.
+International Linguistics Research; Vol. 7, No. 2; 2024 
+ISSN 2576-2974   E-ISSN 2576-2982 
+https://doi.org/10.30560/ilr.v7n2p1 
+Published by IDEAS SPREAD 
+ 
+A Comparison of Rhetorical Move Analysis by GPT-4 and Humans in 
+Abstracts of Scopus-Indexed Tourism Research Articles 
+Hui Geng1, Vahid Nimehchisalem1, Mohsen Zargar1 & Jayakaran Mukundan2 
+1 English Department, Faculty of Modern Languages and Communication, Universiti Putra Malaysia, Malaysia 
+2 School of Education, Faculty of Social Sciences & Leisure Management, Taylor’s University, Malaysia 
+Correspondence: Vahid Nimehchisalem, English Department, Faculty of Modern Languages and Communication, 
+Universiti Putra Malaysia, Malaysia. Tel: 60-176-678-715. E-mail: vahid@upm.edu.my 
+ 
+Received: May 24, 2024   Accepted: June 3, 2024   Online Published: June 5, 2024 
+ 
+Abstract 
+AI advancements have made ChatGPT a remarkable and versatile tool in education and linguistics, showcasing its 
+potential to mimic human conversation and comprehend language. Scholars are intrigued by ChatGPT’s text data 
+handling, yet its application in rhetorical move analysis remains largely unexplored. Therefore, the objective of 
+this study is to investigate the ability of GPT-4 in the identification of rhetorical moves employed in the abstracts 
+of tourism research articles indexed in Scopus. The essentiality of moves was also reported. Additionally, this 
+research seeks to compare the accuracy of GPT-4’s analysis with that of humans. Adopting Hyland’s (2000) five-
+move model, the results indicated that GPT-4 analyzes moves more quickly but less accurately than human experts, 
+and the four principal types of errors committed by GPT-4 include redundancy/over-count, unmatched 
+categorization, incorrect sequence, and vague identification. The findings also revealed that Move 2 (Purpose) and 
+Move 4 (Findings) are obligatory with a 100% essentiality rate through both GPT-4 and human analysis. 
+Differences arise in certain steps of Move 1 (Introduction), Move 3 (Methods), and Move 5 (Conclusion), where 
+GPT-4 often sees higher essentiality rates. This study shed light on the testament to AI’s current capabilities in 
+move analysis in academic discourse. 
+Keywords: ChatGPT, rhetorical moves, abstracts, tourism research articles, Scopus-indexed journal 
+1. Introduction 
+In recent years, there has been wide interest in genre analysis of abstract writing. An abstract serves as a 
+representative of the research by providing a concise yet precise synopsis of the article. The abstract functions as 
+a guide to the article, stimulating readers to proceed with the reading. In the case of journals, the acceptance or 
+rejection of a paper is typically determined by the quality of the abstract. For research articles to be published in 
+prestigious journals indexed by Scopus, a concise and informative abstract is essential (Geng & Wei, 2023). 
+Previous studies have investigated the rhetorical structure of research article abstracts across multiple soft science 
+disciplines, including education (Sidek, 2017), literature (Tankó, 2017), applied linguistics (Fauzan et al., 2020), 
+psychology (Gusmana, 2023), history (Saidi & Karami, 2024), geography (Alyousef, 2023), economics (Fitria, 
+2022), among others. However, within the tourism discipline, there have been few studies on the rhetorical move 
+structures of research article abstracts, particularly those indexed by Scopus (Kurniawan & Sabila, 2021). 
+Furthermore, in most move analysis studies, researchers commonly conducted move identification manually, a 
+process that consumes a significant amount of time. With the advent and the evolution of artificial intelligence, 
+ChatGPT which employs natural language processing has shown potential as an effective aid in the academic 
+community. At present, several studies are looking into the suitability and effectiveness of ChatGPT in educational 
+settings. An illustration of this can be seen in the research conducted by Adeshola and Adepoju (2023), which 
+utilized sentiment analysis to conclude that the majority of individuals express positive opinions regarding 
+ChatGPT. Another example is that Livberber (2023) investigated the utility of ChatGPT (GPT-3.5 and GPT-4) as 
+a writing tool and found that it has the potential to logically and appropriately specify the steps to follow in the 
+design of an academic article. Nevertheless, scant attention has been paid to ChatGPT’s capability to conduct 
+textual analysis, which is a research method used by scholars to interpret, analyze, and understand the content, 
+structure, and various elements of the text. So far only one study has shown that GPT-4 could conduct conceptual 
+metaphors and thematic analysis of short stories (Geng & Nimehchisalem, 2023).
+ilr.ideasspread.org 
+International Linguistics Research 
+Vol. 7, No. 2; 2024 
+Published by IDEAS SPREAD 
+ 
+Thus, is there a possibility of employing AI to conduct other various types of textual analysis including discourse, 
+sentiment, and stylistic analysis, as well as for linguistic analysis encompassing lexical, semantic, pragmatic, genre, 
+frame, and intertextuality analysis? Given that rhetorical move analysis can be considered a part of genre analysis, 
+which focuses on understanding how texts achieve specific communicative objectives by examining their 
+structural and strategic components, it is worthwhile to leverage the AI-powered tool ChatGPT for experiments to 
+assess its feasibility to accurately identify these rhetorical moves. Based on this, the current study aims to fill the 
+gap by investigating the ability of GPT-4 to identify rhetorical moves in abstracts of tourism research articles from 
+a Scopus-indexed journal. The findings of this research not only underscore the remarkable prospects of exploiting 
+artificial intelligence, especially ChatGPT, for improving academic writing as well as research methods but also 
+open new possibilities for genre analysis.  
+2. Literature Review 
+In academic writing, the abstract is recognized by authors as a concise and accurate summary of the content of a 
+research article, marking its unique place as a specific genre within scholarly prose. According to Swales & Feak 
+(2004), it is a crucial navigational tool, allowing readers to quickly ascertain the relevance and applicability of the 
+research to their work. In the digital age, the abstract’s role has expanded beyond the article itself to include its 
+visibility in electronic databases and search engines. Biber et al. (2007) noted that well-crafted abstracts improve 
+the article’s discoverability, significantly affecting its readership and citation rates. Keywords and phrases within 
+the abstract enhance the article’s search engine optimization (SEO), making it more accessible to a global audience. 
+Given the pivotal role of abstracts in deciding the fate of manuscripts, several frameworks have been developed to 
+analyze their structural composition (Bhatia, 1993; Santos, 1996; Swales, 1990), among which Hyland’s (2000) 
+five-move model is notably comprehensive, covering introduction, purpose, method, results, and conclusion 
+sections (Ghasempour & Farnia, 2017). 
+These models suggest universal guidelines for organizing abstracts across various fields. However, the specific 
+rhetorical structures of tourism abstracts in Scopus-indexed journals have not been extensively explored. Founded 
+in November 2004, Scopus is the largest abstract and citation database, exceeding the Web of Science Core 
+Collection in journal coverage. It provides advanced tools for research tracking, analysis, and visualization, 
+establishing it as a highly reputable bibliometric database (Joshi, 2016). As mentioned by Geng (2024), Scopus-
+indexed journals have gained much recognition on various occasions. For example, many universities in Malaysia 
+as well as in the world hope their academicians publish in Scopus-indexed, ISI (now Web of Science), and other 
+high-impact factor journals. As a result, a detailed analysis of how the rhetorical moves were used in Scopus-
+indexed tourism research articles is worth further exploring.  
+Rhetorical moves, as identified by Ding (2007), are schematic units that denote textual regularities, socially 
+recognized for their formal structure, which fulfills a coherent communicative function in written discourse 
+(Swales, 2004). A move is seen as a chunk of text, encompassing at least one complete sentence with a specific 
+communicative function, indicating that any sentence or group of sentences meeting the criteria of a move or step 
+in the coding system was considered an instance of that move or step, irrespective of length (Geng et al., 2023; 
+Zhang & Wannaruk, 2016). 
+In the coding phase, moves or steps are counted as single instances if uninterrupted, but as separate instances if 
+interrupted by different moves or steps (Geng et al., 2023). Various assisted annotation software tools for coding 
+rhetorical moves have been examined, such as Mover, Research Writing Tutor, Academic Writing Analytics 
+(AWA), and AcaWriter tools (Knight et al., 2020). However, to the researchers’ knowledge, there has been no 
+study to date that utilizes ChatGPT (GPT-4) for the coding of rhetorical moves within academic texts. As a type 
+of Large Language Model (LLM) and a prominent framework for generative artificial intelligence (AI), The 
+Generative Pre-trained Transformer (GPT), commonly referred to as ChatGPT, has attracted significant public 
+interest after it reached version 3.5 (Reiss, 2023). GPT-4, unveiled by OpenAI on March 14, 2023, is a recent 
+version of OpenAI’s GPT series. It is an enhanced version of GPT-3.5 with the superior capacity to identify 
+nuances and deliver more accurate and logical responses (Bubeck et al., 2023). 
+As tested by researchers, Savelka et al. (2023) claimed that GPT-4 can analyze textual data in the context of a task 
+involving the interpretation of legal concepts at a level comparable to that of law student annotators who have 
+received adequate training. Another study reported that GPT-4 can assist in qualitative data analysis, and careful 
+prompt structuring can align AI responses closely with human interpretations, particularly in deductive analysis 
+(Siiman, 2023). The previous findings suggested that there is a need to explore more about GPT-4’s ability to 
+analyze different types of textual data. Hence, the current study aims to fill this gap in how GPT-4 can assist 
+humans in genre analysis, particularly in move analysis.
+ilr.ideasspread.org 
+International Linguistics Research 
+Vol. 7, No. 2; 2024 
+Published by IDEAS SPREAD 
+ 
+2.1 Research Objectives 
+1. To investigate the ability of GPT-4 to identify rhetorical moves in abstracts of tourism research articles 
+from a Scopus-indexed journal.  
+2. To explore the essentiality of the moves and steps in abstracts of tourism research articles from a Scopus-
+indexed journal through analysis by GPT-4 and humans.

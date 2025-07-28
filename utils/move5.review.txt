@@ -1,0 +1,135 @@
+2.	 What are the frequently employed rhetorical moves in narrative stories?
+3.	 In what ways are lexical collocations connected to rhetorical moves in narrative stories?
+Method
+Corpus description
+The target genre of the current study was narrative stories, which differ from other subgenres of 
+stories with their ‘problem-solution’ plots (Martin and Rose 2008). We sourced narrative stories 
+from Reader’s Digest. Founded in 1922, Reader’s Digest has cultivated a rich history of present­
+ing narratives that resonate with readers across the globe; this historical legacy underscores 
+its commitment to connecting with diverse audiences and maintaining a lasting impact on its 
+readership (Reader’s Digest 2022a). The magazine’s thriving presence and global influence are 
+also substantiated by recent data showing that the print and digital products of Reader’s Digest 
+now reach nearly one in every four adults in the USA, with millennials making up a third of its 
+digital audience (CNBC 2019).
+Along with its long history, wide reach, and ability to capture the interest of the digitally native 
+generation, the abundance of expertly written narrative content on diverse topics in Reader’s 
+Digest makes it an appealing source of authentic materials for teaching and learning narra­
+tive stories. We collected 678 narrative stories published on the Reader’s Digest website between 
+September 2015 and February 2022. As shown in Table 1, the corpus contained 698,024 words, 
+with an average of 1,029 words per story. These stories covered a conspicuous breadth of topics 
+in 13 broad thematic domains (e.g. True Stories, Pets & Animals, Knowledge, Humor, etc.), encom­
+passing a spectrum of human experiences such as love, loss, survival, and ‘unbelievable coin­
+cidences’ (Reader’s Digest 2022b). This expansive thematic repertoire provides a rich terrain 
+for linguistic investigation. For instance, the narratives falling within the thematic domain of 
+Knowledge incorporate elements such as cognitive exercises, social etiquettes, facts, grammatical 
+Downloaded from https://academic.oup.com/applij/article/45/5/786/7589736 by college of foreign languages,hunan normal university user on 22 June
+790  |  Y. Jiang, X. Lu, F. Liu, J. Zhang, and T. Jin
+and orthographic intricacies, as well as insights derived from psychology, while those categorized 
+under the thematic domain Humor pivot toward lighthearted entertainment, characterized by the 
+inclusion of cartoons, humorous photographs, comic stories, and jokes. Each story published by 
+Reader’s Digest was crafted by seasoned writers and underwent a rigorous review process before 
+publication (Reader’s Digest 2022a). As such, these stories not only afford language learners the 
+opportunity to engage with authentic textual material that mirrors a wide array of human expe­
+riences but also exhibit a level of narrative writing expertise that can help learners develop their 
+understanding of the linguistic and rhetorical features of narrative stories (Jiang 2022; Wang et al. 
+2023).
+Extracting lexical collocations
+To address the first research question, we extracted a list of lexical collocations from the corpus 
+in five steps. Each collocation consisted of a node word lemma and a collocate word lemma, and 
+only content word lemmas (i.e. nouns, verbs, adjectives, and adverbs) were considered as node 
+words. First, we part-of-speech tagged and lemmatized each text in our corpus using the Stanford 
+CoreNLP Toolkit (Manning et al. 2014). Second, we used the Keyword function of AntConc 4.0.6 
+(Anthony 2022) to compare the frequency of each lemma in our corpus with its frequency in the 
+freely available lemma frequency list derived from the written section of the American National 
+Corpus (ANC) (Reppen et al. 2005). The written section of the ANC contains 18,530,112 words and 
+covers 11 written genres and is thus representative of general written English. The lemmas were 
+ranked by their keyness value (based on the chi-squared measure) indicating how different their 
+frequencies were in our corpus and the reference corpus. From the top 2,000 lemmas with the 
+highest keyness values, we selected the content word lemmas (i.e. adjective, adverbs, nouns, and 
+verbs) as node words (1,313 total). Third, we used the Collocates function of the online Corpus of 
+Table 1:  Description of the corpus
+Topics
+Number of texts 
+(percentage)
+Range
+Mean number 
+of words
+Standard 
+deviation
+Mean number 
+of paragraphs
+True stories
+454 (66.96%)
+175–6171
+1083.53
+831.73
+21.99
+Pets & 
+animals
+48 (7.08%)
+151–2,293
+868.15
+620.64
+13.94
+Knowledge
+32 (4.72%)
+168–2,559
+981.25
+667.22
+18.13
+Humor
+6 (0.88%)
+226–927
+588.00
+256.28
+19.0
+Money
+5 (0.74%)
+567–2,089
+1560.40
+545.13
+29.4
+Relationships
+63 (9.29%)
+188–3,572
+1072.94
+694.62
+24.06
+Home
+1 (0.15%)
+1,098–1,098
+1098.00
+0.0
+23.0
+Arts & 
+entertainment
+11 (1.62%)
+422–2574
+1152.73
+611.98
+24.36
+Holidays & 
+observances
+40 (5.90%)
+117–2,465
+632.43
+488.63
+13.1
+Travel
+12 (1.77%)
+247–2,399
+933.00
+644.07
+17.83
+Food
+1 (0.15%)
+772–772
+772.00
+0.0
+11.0
+Beauty & 
+fashion
+1 (0.15%)
+380–380
+380.00
+0.0

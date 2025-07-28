@@ -1,0 +1,131 @@
+Ackermann, K. and Y. Chen. 2013. ‘Developing the academic collocation list (ACL): A corpus-driven 
+and expert-judged approach,’ Journal of English for Academic Purposes 12/4: 235–47. https://doi.
+org/10.1016/j.jeap.2013.08.002
+Anthony, L. 2022. AntConc. Computer Software. Waseda University.
+Berman, R. A. and B. Nir-Sagiv. 2007. ‘Comparing narrative and expository text construction across 
+adolescence: A developmental paradox,’ Discourse Processes 43: 79–120. https://doi.org/10.1207/
+s15326950dp4302_1
+Biber, D., S. Conrad, and V. Cortes. 2004. ‘If you look at…: Lexical bundles in university teaching and 
+textbooks,’ Applied Linguistics 25: 371–405. https://doi.org/10.1093/applin/25.3.371
+Bychkovska, T. and J. J. Lee. 2017. ‘At the same time: Lexical bundles in L1 and L2 university student 
+argumentative writing,’ Journal of English for Academic Purposes 30: 38–52. https://doi.org/10.1016/j.
+jeap.2017.10.008
+Casal, J. E. and M. Kessler. 2020. ‘Form and rhetorical function of phrase-frames in promotional 
+writing: A corpus-and genre-based analysis,’ System 95: 102370. https://doi.org/10.1016/j.
+system.2020.102370
+CNBC. 2019. ‘How Reader’s Digest went from life support to modern, digital-first multimedia brand’, 
+available 
+at 
+https://www.cnbc.com/2020/03/02/how-readers-digest-transformed-into-a-digi­
+tal-multimedia-brand.html. Accessed 27 August 2023.
+Cobb, T. 2018. VocabProfiler VP Compleat BNC-COCA-25. Computer Software. Available at https://www.
+lextutor.ca/vp/comp/. Accessed 1 September 2022.
+Conrad, S. and D. Biber. 2004. ‘The frequency and use of lexical bundles in conversation and academic 
+prose,’ Lexicographica: International Annual for Lexicography 20: 56–71.
+Cortes, V. 2013. ‘The purpose of this study is to: Connecting lexical bundles and moves in research 
+article introductions,’ Journal of English for Academic Purposes 12/1: 33–43. https://doi.org/10.1016/j.
+jeap.2012.11.002
+Cotos, E., S. Huffman, and S. Link. 2017. ‘A move/step model for methods sections: Demonstrating 
+rigour and credibility,’ English for Specific Purposes 46: 90–106. https://doi.org/10.1016/j.
+esp.2017.01.001
+Davies, M. 2020. The Corpus of Contemporary American English (CoCA). Data Set. Available at https://
+www.english-corpora.org/coca/. Accessed 1 September 2022.
+Deane, P., et al. 2019. ‘The key practice, building and sharing stories and social understandings: The 
+intrinsic value of narrative,’ Educational Testing Service 2019/1: 1–78. https://doi.org/10.1002/
+ets2.12266
+Dong, J. and X. Lu. 2020. ‘Promoting discipline-specific genre competence with corpus-based 
+genre analysis activities,’ English for Specific Purposes 58: 138–54. https://doi.org/10.1016/j.
+esp.2020.01.005
+Durrant, P. 2009. ‘Investigating the viability of a collocation list for students of English for academic 
+purposes,’ English for Specific Purposes 28/3: 157–69. https://doi.org/10.1016/j.esp.2009.02.002
+Downloaded from https://academic.oup.com/applij/article/45/5/786/7589736 by college of foreign languages,hunan normal university user on 22 June
+804  |  Y. Jiang, X. Lu, F. Liu, J. Zhang, and T. Jin
+Ellis, N. C. 2012. ‘Memory for language’ in P. Robinson (ed.): Cognition and Second Language Instruction. 
+Cambridge University Press, pp. 32–68.
+Flynn, E. E. 2018. ‘Storying experience: Young children’s early use of story genres,’ Text & Talk 38/4: 
+457–80. https://doi.org/10.1515/text-2018-0010
+Holmes, R. 1997. ‘Genre analysis, and the social sciences: An investigation of the structure of research 
+article discussion sections in three disciplines,’ English for Specific Purposes 16/4: 321–37. https://
+doi.org/10.1016/S0889-4906(96)00038-5
+Hyland, K. 2008. ‘Genre and academic writing in the disciplines,’ Language Teaching 41/4: 543–62.
+IBM Corp. 2019. IBM SPSS Statistics for macOS. Computer Software. IBM Corp.
+Jiang, Y. 2022. ‘The connection between collocations and rhetorical moves in narrative stories: A corpus-based 
+study’, unpublished Master’s thesis, Sun Yat-sen University.
+Jović, S. 2020. ‘The narrative games we play: Varied use of narrative strategies across genres and 
+socioeconomic positions,’ Language & Communication 74: 87–102. https://doi.org/10.1016/j.
+langcom.2020.06.001
+Kang, J. Y. 2005. ‘Written narratives as an index of L2 competence in Korean EFL learners,’ Journal of 
+Second Language Writing 14/4: 259–79. https://doi.org/10.1016/j.jslw.2005.10.002
+Kanoksilapatham, B. 2007. ‘Rhetorical moves in biochemistry research articles’ in D. Biber, U. Connor, 
+and T. A. Upton (eds): Discourse on the Move: Using Corpus Analysis to Describe Discourse Structure. 
+John Benjamins Publishing Company, pp. 73–119.
+Labov, W. and J. Waletzky. 1967. ‘Narrative analysis: Oral versions of personal experience’ in J. Helm 
+(ed.): Essays on the Verbal and Visual Arts: Proceedings of the 1966 Annual Spring Meeting of the American 
+Ethnological Society. University of Washington Press, pp. 12–44.
+Lawler, S. 2002. ‘Narrative in social research’ in T. May (ed.): Qualitative Research in Action. SAGE 
+Publications, pp. 242–58.
+Lu, X., J. E. Casal, and Y. Liu. 2021a. ‘Towards the synergy of genre- and corpus-based approaches 
+to academic writing research and pedagogy,’ International Journal of Computer Assisted Language 
+Learning and Teaching 11/1: 59–71.
+Lu, X., J. Yoon, and O. Kisselev. 2021b. ‘Matching phrase-frames to rhetorical moves in social science 
+research article introductions,’ English for Specific Purposes 61: 63–83. https://doi.org/10.1016/j.
+esp.2020.10.001
+Lu, X., J. Yoon, and O. Kisselev. 2018. ‘A phrase-frame list for social science research article introduc­
+tions,’ Journal of English for Academic Purposes 36: 76–85. https://doi.org/10.1016/j.jeap.2018.09.004
+Manning, C. D., et al. 2014. ‘The Stanford CoreNLP Natural Language Processing Toolkit’. Proceedings 
+of the 52nd Annual Meeting of the Association for Computational Linguistics: System 
+Demonstrations, 55–60.
+Martin, J. R. and D. Rose. 2008. Genre Relations: Mapping Culture. Equinox.
+Mizumoto, A., S. Hamatani, and Y. Imao. 2017. ‘Applying the bundle–move connection approach to 
+the development of an online writing support tool for research articles,’ Language Learning 67/4: 
+885–921. https://doi.org/10.1111/lang.12250
+Nation, P. 2013. Learning Vocabulary in Another Language. Cambridge University Press.
+Negretti, R. and L. McGrath. 2018. ‘Scaffolding genre knowledge and metacognition: Insights from 
+an L2 doctoral research writing course,’ Journal of Second Language Writing 40: 12–31. https://doi.
+org/10.1016/j.jslw.2017.12.002
+Omidian, T., H. Shahriari, and A. Siyanova-Chanturia. 2018. ‘A cross-disciplinary investigation of 
+­multi-word expressions in the moves of research article abstracts,’ Journal of English for Academic 
+Purposes 36: 1–14. https://doi.org/10.1016/j.jeap.2018.08.002
+Reader’s Digest. 2022a. ‘About Reader’s Digest’, available at https://www.rd.com/about-readers-di­
+gest/. Accessed 19 January 2022.
+Reader’s Digest. 2022b. ‘Real life stories’, available at https://www.rd.com/real-life-stories/. Accessed 
+19 January 2022.
+Reader’s Digest. 2022c. ‘That time ordering Domino’s pizza saved a man’s life’, available at https://
+www.rd.com/article/pizza-saved-mans-life/. Accessed 31 January 2022.
+Downloaded from https://academic.oup.com/applij/article/45/5/786/7589736 by college of foreign languages,hunan normal university user on 22 June
+What Should Go with this Word Here  |
+Reader’s Digest. 2022d. ‘A nurse’s story: taking in my cancer patient’s 9-year-old son was the best 
+thing I ever did’, available at https://www.rd.com/article/nurse-cancer-patient-son/. Accessed 2 
+February 2022.
+Reader’s Digest. 2022e. ‘How an 18-year-old helped save a hiker who fell 75 feet off a mountain cliff’, 
+available at https://www.rd.com/article/teenager-saves-hiker/. Accessed 3 February 2022.
+Reppen, R., N. Ide, and K. Suderman. 2005. American National Corpus (ANC) Second Release. Data Set. 
+Available at https://anc.org/. Accessed 1 September 2022.
+Rodríguez-Fuentes, R. A. and A. M. Swatek. 2022. ‘Exploring the effect of corpus-informed and con­
+ventional homework materials on fostering EFL students’ grammatical construction learning,’ 
+System 104: 102676. https://doi.org/10.1016/j.system.2021.102676
+Rogers, J., et al.. 2021. ‘The creation and application of a large-scale corpus-based academic ­multi-word 
+unit list,’ English for Specific Purposes 62: 142–57. https://doi.org/10.1016/j.esp.2021.01.001
+Sanford, A. J. and C. Emmott. 2012. Mind, Brain and Narrative. Cambridge University Press.
+Shin, D. and P. Nation. 2008. ‘Beyond single words: The most frequent collocations in spoken English,’ 
+ELT Journal 62/4: 339–48. https://doi.org/10.1093/elt/ccm091
+Swales, J. 1981. Aspects of Article Introductions. Language Studies Unit.
+Swales, J. 1990. Genre Analysis: English in Academic and Research Settings. Cambridge University Press.
+Tardy, C. M. 2016. Beyond Convention: Genre Innovation in Academic Writing. University of Michigan Press. 
+https://doi.org/10.3998/mpub.5173647
+Trosborg, A. 1997. ‘Text typology: Register, genre and text type’ in A. Trosborg (ed.): Text Typology and 
+Translation. Benjamins Translation Library, pp. 3–24.
+Underwood, G., N. Schmitt, and A. Galpin. 2004. ‘The eyes have it: An eye-movement study into the 
+processing of formulaic sequences’ in N. Schmitt (ed.): Formulaic Sequences. John Benjamins, pp. 
+153–72.
+Wang, Y., et al. 2023. ‘Connecting form with function: Model texts for bilingual learners’ narrative 
+writing,’ Assessing Writing 57: 100753. https://doi.org/10.1016/j.asw.2023.100753
+Webb, S. and E. Kagimoto. 2011. ‘Learning collocations: Do the number of collocates, position of 
+the node word, and synonymy affect learning?,’ Applied Linguistics 32/3: 259–76. https://doi.
+org/10.1093/applin/amq051
+Wray, A. and M. Perkins. 2000. ‘The functions of formulaic language: An integrated model,’ Language 
+& Communication 20/1: 1–28. https://doi.org/10.1016/S0271-5309(99)00015-4
+Yoon, H. J. 2021. ‘Challenging the connection between task perceptions and language use in L2 writ­
+ing: Genre, cognitive task complexity, and linguistic complexity,’ Journal of Second Language Writing 
+54: 100857. https://doi.org/10.1016/j.jslw.2021.100857
+Downloaded from https://academic.oup.com/applij/article/45/5/786/7589736 by college of foreign languages,hunan normal university user on 22 June

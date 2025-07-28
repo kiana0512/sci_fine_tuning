@@ -1,0 +1,112 @@
+Anthony, L., & Lashkia, G. V. (2003). Mover: A machine learning tool to assist in the reading and writing of technical papers. IEEE Transactions on Professional 
+Communications, 46(3), 185–193. https://doi.org/10.1109/TPC.2003.816789 
+Balkus, S. V., & Yan, D. (2023). Improving short text classification with augmented data using GPT-3. Natural Language Engineering, 1–30. https://doi.org/10.1017/ 
+S1351324923000438 
+Biber, D., Connor, U., & Upton, T. A. (2007). Discourse on the move: Using corpus analysis to describe discourse structure. John Benjamins Publishing.  
+Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., 
+Henighan, T., Child, R., Ramesh, A., Ziegler, D., Wu, J., Winter, C., … Amodei, D. (2020). Language models are few-shot learners. Advances in Neural Information 
+Processing Systems, 33, 1877–1901. https://proceedings.neurips.cc/paper_files/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html. 
+Casal, J. E., & Kessler, M. (2023). Rhetorical move-step analysis. In M. Kessler, & C. Polio (Eds.), Conducting genre-based research in applied linguistics (pp. 82–104). 
+Routledge. https://doi.org/10.4324/9781003300847-7.  
+Cortes, V. (2013). The purpose of this study is to: Connecting lexical bundles and moves in research article introductions. Journal of English for Academic Purposes, 12 
+(1), 33–43. https://doi.org/10.1016/j.jeap.2012.11.002 
+Cotos, E., Huffman, S., & Link, S. (2017). A move/step model for methods sections: Demonstrating rigour and credibility. English for Specific Purposes, 46, 90–106. 
+https://doi.org/10.1016/j.esp.2017.01.001 
+Cotos, E., Huffman, S., & Link, S. (2020). Understanding graduate writers’ interaction with and impact of the Research Writing Tutor during revision. Journal of 
+Writing Research, 12(1), 187–232. https://doi.org/10.17239/jowr-2020.12.01.07 
+Cotos, E., & Pendar, N. (2016). Discourse classification into rhetorical functions for AWE feedback. CALICO Journal, 33(1), 92–116. https://doi.org/10.1558/cj. 
+v33i1.27047 
+Dietterich, T. G. (1998). Approximate statistical tests for comparing supervised classification learning algorithms. Neural Computation, 10(7), 1895–1923. https://doi. 
+org/10.1162/089976698300017197 
+Dong, J., & Lu, X. (2020). Promoting discipline-specific genre competence with corpus-based genre analysis activities. English for Specific Purposes, 58, 138–154. 
+https://doi.org/10.1016/j.esp.2020.01.005 
+Fatouros, G., Soldatos, J., Kouroumali, K., Makridis, G., & Kyriazis, D. (2023). Transforming sentiment analysis in the financial domain with ChatGPT. Machine 
+Learning with Applications, 14, Article 100508. https://doi.org/10.1016/j.mlwa.2023.100508 
+Gholamy, A., Kreinovich, V., & Kosheleva, O. (2018). Why 70/30 or 80/20 relation between training and testing sets: A pedagogical explanation. International Journal 
+of Intelligent Technologies and Applied Statistics, 11(2), 105–111. https://doi.org/10.6148/IJITAS.201806_11(2).0003 
+Giray, L. (2023). Prompt engineering with ChatGPT: A guide for academic writers. Annals of Biomedical Engineering, 51(12), 2629–2633. https://doi.org/10.1007/ 
+s10439-023-03272-4 
+M. Kim and X. Lu
+Journal of English for Academic Purposes 71 (2024) 101422
+Halliday, M. A. K. (1978). Language as social semiotics. Edward Arnold.  
+Huang, F., Kwak, H., & An, J. (2023). Is ChatGPT better than human annotators? Potential and limitations of ChatGPT in explaining implicit hate speech. In 
+Companion proceedings of the ACM web conference 2023 (pp. 294–297). https://doi.org/10.1145/3543873.3587368 
+Hyland, K. (2007). Genre pedagogy: Language, literacy and L2 writing instruction. Journal of Second Language Writing, 16(3), 148–164. https://doi.org/10.1016/j. 
+jslw.2007.07.005 
+Hyland, K. (2015). Genre, discipline and identity. Journal of English for Academic Purposes, 19, 32–43. 
+Hyon, S. (1996). Genres in three traditions: Implications for second language teaching. Tesol Quarterly, 30, 693–722. https://www.jstor.org/stable/3587930. 
+Kanoksilapatham, B. (2005). Rhetorical structure of biochemistry research articles. English for Specific Purposes, 24(3), 269–292. https://doi.org/10.1016/j. 
+esp.2004.08.003 
+Kavzoglu, T. (2017). Chapter 33—object-oriented random Forest for high resolution land cover mapping using quickbird-2 imagery. In P. Samui, S. Sekhar, & 
+V. E. Balas (Eds.), Handbook of neural computation (pp. 607–619). Academic Press. https://doi.org/10.1016/B978-0-12-811318-9.00033-8.  
+Kessler, M. (2020). A text analysis and gatekeepers’ perspectives of a promotional genre: Understanding the rhetoric of Fulbright grant statements. English for Specific 
+Purposes, 60, 182–192. 
+Kessler, M., & Polio, C. (2023). Introduction. In M. Kessler, & C. Polio (Eds.), Conducting genre-based research in applied linguistics (pp. 1–10). Routledge. https://doi. 
+org/10.4324/9781003300847-1.  
+Kim, M., Qiu, X., & Wang, Y. (2024). Interrater agreement in genre analysis: A methodological review and a comparison of three measures. Research Methods in Applied 
+Linguistics, 3(1), 100097. https://doi.org/10.1016/j.rmal.2024.100097 
+Koco´n, J., Cichecki, I., Kaszyca, O., Kochanek, M., Szydło, D., Baran, J., Bielaniewicz, J., Gruza, M., Janz, A., Kanclerz, K., Koco´n, A., Koptyra, B., Mieleszczenko- 
+Kowszewicz, W., Miłkowski, P., Oleksy, M., Piasecki, M., Radli´nski, Ł., Wojtasik, K., Wo´zniak, S., & Kazienko, P. (2023). ChatGPT: Jack of all trades, master of 
+none. Information Fusion, 99, Article 101861. https://doi.org/10.1016/j.inffus.2023.101861 
+Kyle, K. (2016). Measuring syntactic development in L2 writing: Fine grained indices of syntactic complexity and usage-based indices of syntactic sophistication [Unpublished 
+doctoral dissertation]. Georgia State University. https://doi.org/10.57709/8501051. 
+Lee, U., Jung, H., Jeon, Y., Sohn, Y., Hwang, W., Moon, J., & Kim, H. (2023). Few-shot is enough: Exploring ChatGPT prompt engineering method for automatic 
+question generation in English education. Education and Information Technologies, 1–33. https://doi.org/10.1007/s10639-023-12249-8 
+Li, Q., Peng, H., Li, J., Xia, C., Yang, R., Sun, L., … He, L. (2021). A survey on text classification: From shallow to deep learning. arXiv preprint arXiv:2008.00364. 
+https://doi.org/10.48550/arXiv.2008.00364 
+Liu, J., Yang, S., Peng, T., Hu, X., & Zhu, Q. (2023). ChatICD: Prompt learning for few-shot ICD coding through ChatGPT. In 2023 IEEE international conference on 
+bioinformatics and biomedicine (BIBM) (pp. 4360–4367). https://doi.org/10.1109/BIBM58861.2023.10385482 
+Lossio-Ventura, J. A., Weger, R., Lee, A. Y., Guinee, E. P., Chung, J., Atlas, L., Linos, E., & Pereira, F. (2024). A comparison of ChatGPT and fine-tuned open pre-trained 
+transformers (OPT) against widely used sentiment analysis tools: Sentiment analysis of COVID-19 survey data. JMIR Mental Health, 11, Article e50150. https:// 
+doi.org/10.2196/50150 
+Loukas, L., Stogiannidis, I., Malakasiotis, P., & Vassos, S. (2023). Breaking the bank with ChatGPT: Few-shot text classification for finance. In C.-C. Chen, H. Takamura, 
+P. Mathur, R. Sawhney, H.-H. Huang, & H.-H. Chen (Eds.), Proceedings of the fifth workshop on financial technology and Natural Language processing and the second 
+multimodal AI for financial forecasting (pp. 74–80). https://aclanthology.org/2023.finnlp-1.7. 
+Lu, X. (2010). Automatic analysis of syntactic complexity in second language writing. International Journal of Corpus Linguistics, 15(4), 474–496. https://doi.org/ 
+10.1075/ijcl.15.4.02lu 
+Lu, X., & Hu, R. (2022). Sense-aware lexical sophistication indices and their relationship to second language writing quality. Behavior Research Methods, 54(3), 
+1444–1460. https://doi.org/10.3758/s13428-021-01675-6 
+Lu, X., Yoon, J., & Kisselev, O. (2021a). Matching phrase-frames to rhetorical moves in social science research article introductions. English for Specific Purposes, 61, 
+63–83. https://doi.org/10.1016/j.esp.2020.10.001 
+Lu, X., Yoon, J., Kisselev, O., Casal, J. E., Liu, Y., Deng, J., & Nie, R. (2021b). Rhetorical and phraseological features of research article introductions: Variation among 
+five social science disciplines. System, 100, 102543. https://doi.org/10.1016/j.system.2021.102543 
+Mizumoto, A., & Eguchi, M. (2023). Exploring the potential of using an AI language model for automated essay scoring. Research Methods in Applied Linguistics, 2(2), 
+Article 100050. https://doi.org/10.1016/j.rmal.2023.100050 
+Moreno, A. I., & Swales, J. M. (2018). Strengthening move analysis methodology towards bridging the function-form gap. English for Specific Purposes, 50, 40–63. 
+https://doi.org/10.1016/j.esp.2017.11.006 
+OpenAI. (2024). OpenAI playground (May 4 version) [Large language model]. https://platform.openai.com/playground. 
+Paltridge, B. (1994). Genre analysis and identification of textual boundaries. Applied Linguistics, 15(3), 288–299. https://doi.org/10.1093/applin/15.3.288 
+Pandey, R. K., Dahiya, A. K., Pandey, A. K., & Mandal, A. (2022). Optimized deep learning model assisted pressure transient analysis for automatic reservoir 
+characterization. Petroleum Science and Technology, 40(6), 659–677. https://doi.org/10.1080/10916466.2021.2007122 
+Park, S., Jeon, J., & Shim, E. (2021). Exploring request emails in English for business purposes: A move analysis. English for Specific Purposes, 63, 137–150. https://doi. 
+org/10.1016/j.esp.2021.03.006 
+Parkinson, J. (2017). The student laboratory report genre: A genre analysis. English for Specific Purposes, 45, 1–13. https://doi.org/10.1016/j.esp.2021.03.006 
+Pecher, B., Srba, I., & Bielikova, M. (2024). Fine-tuning, prompting, in-context learning and instruction-tuning: How many labelled samples do we need?. arXiv preprint arXiv: 
+2402.12819. https://doi.org/10.48550/arXiv.2402.12819. 
+Ray, P. P. (2023). ChatGPT: A comprehensive review on background, applications, key challenges, bias, ethics, limitations and future scope. Internet of Things and 
+Cyber-Physical Systems, 3, 121–154. https://doi.org/10.1016/j.iotcps.2023.04.003 
+Reiss, M. V. (2023). Testing the reliability of ChatGPT for text annotation and classification: A cautionary remark. arXiv preprint arXiv:2304.11085. https://doi.org/ 
+10.48550/arXiv.2304.11085. 
+Swales, J. M. (1990). Genre analysis: English in academic and research settings. Cambridge University Press.  
+Swales, J. M. (2004). Research genres: Explorations and applications. Cambridge University Press.  
+Tardy, C. M. (2016). Beyond convention: Genre innovation in academic writing. University of Michigan Press.  
+Tessuto, G. (2015). Generic structure and rhetorical moves in English-language empirical law research articles: Sites of interdisciplinary and interdiscursive cross- 
+over. English for Specific Purposes, 37, 13–26. https://doi.org/10.1016/j.esp.2014.06.002 
+Wachowiak, L., & Gromann, D. (2023). Does GPT-3 grasp metaphors? Identifying metaphor mappings with generative language models. In A. Rogers, J. Boyd-Graber, 
+& N. Okazaki (Eds.), Proceedings of the 61st annual meeting of the association for computational linguistics (volume 1: Long papers) (pp. 1018–1032). Association for 
+Computational Linguistics. https://doi.org/10.18653/v1/2023.acl-long.58.  
+Wei, J., Bosma, M., Zhao, V. Y., Guu, K., Yu, A. W., Lester, B., … Le, Q. V. (2022). Finetuned language models are zero-shot learners. arXiv preprint arXiv:2109.01652, 
+2022. https://doi.org/10.48550/arXiv.2109.01652 
+Wu, T., He, S., Liu, J., Sun, S., Liu, K., Han, Q.-L., & Tang, Y. (2023). A brief overview of ChatGPT: The history, status quo and potential future development. IEEE/CAA 
+Journal of Automatica Sinica, 10(5), 1122–1136. https://doi.org/10.1109/JAS.2023.123618 
+Yoon, J., & Casal, J. E. (2020). Rhetorical structure, sequence, and variation: A step-driven move analysis of applied linguistics conference abstracts. International 
+Journal of Applied Linguistics, 30(3), 462–478. https://doi.org/10.1111/ijal.12300 
+Minjin Kim is a doctoral candidate in Applied Linguistics at The Pennsylvania State University. Her research interests include corpus linguistics, second language 
+acquisition, English for Academic Purposes, and intelligent computer-assisted language learning. Her recent work has appeared in English for Specific Purposes, The 
+Modern Language Journal, and Research Methods in Applied Linguistics. ORCID: https://orcid.org/0000-0001-9935-7867 
+M. Kim and X. Lu
+Journal of English for Academic Purposes 71 (2024) 101422
+Xiaofei Lu is Professor of Applied Linguistics and Asian Studies at The Pennsylvania State University. His research interests are primarily in corpus linguistics, English 
+for Academic Purposes, second language writing, and intelligent computer-assisted language learning. He is the author of Corpus Linguistics and Second Language 
+Acquisition: Perspectives, Issues, and Findings (2023, Routledge). 
+M. Kim and X. Lu

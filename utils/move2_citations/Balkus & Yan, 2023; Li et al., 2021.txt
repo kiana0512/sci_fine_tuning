@@ -1,0 +1,1 @@
+Balkus, Salvador V., Yan, Donghui (2023). Improving short text classification with augmented data using GPT-3. Natural Language Engineering. https://doi.org/10.1017/s1351324923000438

@@ -1,0 +1,203 @@
+2. Literature review 
+2.1. Rhetorical move-step analysis and annotation tools 
+Over the past three decades, the concept of genre has been explored from diverse theoretical perspectives, including Systemic 
+Functional Linguistics (Halliday, 1978), Rhetorical Genre Studies (Hyon, 1996; Paltridge, 1994), and English for Specific Purposes 
+(ESP) (Hyland, 2007; Swales, 1990, 2004). Among these, the ESP approach stands out as particularly influential, which defines a genre 
+as a class of communicative events with purposes recognized and shared by the members of a specific discourse community (Moreno & 
+Swales, 2018; Swales, 1990, 2004). These events and their communicative practices are metaphorically framed as rhetorical move­
+s—discoursal units serving coherent communicative functions—and are further dissected into steps, more granular elements that help 
+achieve the move’s objective (Biber et al., 2007). Thus, genre analysis, often referred to as rhetorical move (or move-step) analysis, 
+seeks to unveil the recurring rhetorical structures and linguistic features pivotal in accomplishing rhetorical purposes within a specific 
+discourse community (Casal & Kessler, 2023; Swales, 1990, 2004). 
+This move-step analysis approach has profoundly impacted the field of EAP by providing insights into the rhetorical and linguistic 
+features of different types of academic writing, and such insights have formed a solid empirical foundation for developing EAP 
+curricula, resources, and teaching methods (e.g., Cortes, 2013; Cotos et al., 2017; Kanoksilapatham, 2005; Lu et al., 2021a; Tessuto, 
+2015). One well-studied genre among this body of research is that of the research article (RA). For example, Kanoksilapatham (2005) 
+analyzed 180 RAs from three engineering disciplines (civil, software, and biomedical) to identify the organizational structures of the 
+texts with move-step analysis, revealing how sub-disciplinary influences shape the construction of individual RA sections and offering 
+engineering students and practitioners a versatile move-step framework to organize their ideas in alignment with the norms of their 
+disciplinary discourse. In addition to delineating the rhetorical structure of RAs and specific RA sections, some studies investigated the 
+linguistic choices associated with different rhetorical move-steps, which yielded valuable insights for EAP curriculum and material 
+development. Cortes (2013), for example, identified lexical bundles of various lengths in RA introductions and linked those bundles to 
+different moves and steps, resulting in a useful list for academic writers. Lu et al. (2021a) also presented a list of three types of 
+phrase-frames from a corpus of 600 RA introductions, namely, those unique to a specific move-step, those primarily associated with 
+one move-step but appearing in others, and those common across multiple move-steps without a direct link to any single one. The 
+practical applications of move-step analysis have not been limited to the RA genre, extending to various other genres such as con­
+ference abstracts, grant applications, business emails, and lab reports (e.g., Casal & Kessler, 2023; Park et al., 2021; Parkinson, 2017; 
+Yoon & Casal, 2020). 
+The move-step analysis typically involves a three-stage methodology as outlined by Casal and Kessler (2023): 1) development of a 
+rhetorical move-step model to capture patterns of rhetorical activity within the dataset, accommodating data variability, 2) application 
+of the model to segment texts into rhetorical units, and 3) assessment and refinement of the move-step framework to enhance its 
+reliability and validity through inter-coder agreement. Several recent studies have followed these steps in their move-step analysis, 
+albeit with variations tailored to their particular research contexts (e.g., Cotos et al., 2017; Lu et al., 2021a; Yoon & Casal, 2020). In 
+studying established genres, researchers often begin with existing rhetorical move frameworks, such as the Create-a-Research-Space 
+M. Kim and X. Lu
+Journal of English for Academic Purposes 71 (2024) 101422
+(CARS) model for RA introductions (Swales, 1990), adapting them to the specific rhetorical activities of the discourse community being 
+studied. There is good consensus among researchers regarding the importance of coding procedure transparency and attention to 
+inter-coder agreement and coding reliability (Casal & Kessler, 2023; Kim et al., 2024). Whereas the methodology is comprehensive and 
+rigorous, the labor-intensive nature of the coding process can potentially limit the scope of move-step analysis studies. Specifically, this 
+situation often compels researchers to work with smaller datasets, potentially compromising the generalizability of their findings 
+across more diverse datasets. Furthermore, it also restricts our ability to conduct large-scale studies that explore the interaction among 
+multiple text-related variables (e.g., discipline, part-genre), writer-related variables (e.g., L1 background, writing expertise), and 
+linguistic features associated with move-steps. 
+Two tools designed to automate genre analysis for instructional purposes, i.e., AntMover (Anthony & Lashkia, 2003) and Research 
+Writing Tutor (RWT; Cotos & Pendar, 2016), could be used to supplement manual analysis. AntMover was the first tool developed to 
+automatically identify the structure of RA abstracts across various disciplines based on the CARS model. Trained using a Naïve Bayes 
+classifier, a type of supervised learning, on a dataset comprising 100 published abstracts in the field of information technology, the tool 
+achieved an average accuracy of 68% across its six-category classification system (Anthony & Lashkia, 2003), which could be 
+considered relatively low for research purposes when compared to other NLP tools in our field. For instance, existing systems for word 
+sense disambiguation (i.e., labeling instances of polysemous words with their specific meanings in context), a task that resembles the 
+move-step annotation task to some extent, have achieved accuracies of around 90% (Lu & Hu, 2022). Although not extensively utilized 
+for research, the tool has been adopted in a few genre-based intervention studies. For instance, Dong and Lu (2020) employed Ant­
+Mover to facilitate guided genre analysis activities with 30 engineering master students, who were asked to use it to obtain a first-pass 
+annotation of samples in a self-compiled specialized corpus of RA introductions in the students’ fields of study. While the activities 
+enhanced the students’ genre knowledge and genre-based writing skills, the authors noted that AntMover’s six categories did not cover 
+all move-steps in the corpus and asked the students to manually check the output for missed or incorrectly tagged sentences. This study 
+highlights the potential of the automated genre analysis tool for assisting novice academic writers in mastering research article writing 
+while also indicating areas for further enhancement. A more recent development in this area is the RWT (Cotos & Pendar, 2016). 
+Trained using a Support Vector Machine (SVM) algorithm on 650 RA introduction, this tool achieved average accuracies of 72.6% for 
+move classification (3 classes) and 72.9% for step classification (17 classes). Cotos et al. (2020) explored 11 graduate-student writers’ 
+interactions with the tool, showing that the move-step tags it produced and its feedback and scaffolding features helped the students 
+better understand the rhetorical structure of RA introductions, identify inconsistencies in their drafts, and implement effective re­
+visions. However, this tool remains inaccessible to the public. 
+Although AntMover and RWT have exhibited substantial pedagogical value, there is much room for enhancement, particularly 
+since they only rely on features based on bag of clusters and n-grams respectively in modeling. In genre analysis, understanding the 
+context from surrounding sentences and the overall text flow is vital. In other words, accurately identifying specific structural steps 
+often requires recognizing the context provided by adjacent steps (Biber et al., 2007). LLMs, known for their superior understanding of 
+context (Ray, 2023), offer a complex architecture with a vastly larger number of parameters compared to simpler n-gram or bag of 
+clusters approaches (Li et al., 2021; Ray, 2023), providing a promising avenue for significant advancements in move-step annotation 
+accuracy. 
+2.2. ChatGPT (GPT-3.5) for classification tasks 
+Text classification, i.e., the procedure of assigning specific class labels to texts, plays an important role in such NLP applications as 
+sentiment analysis, topic labeling, and dialog act classification (Li et al., 2021). Early research has tackled text classification with 
+traditional models such as Naive Bayes, SVM, K-Nearest Neighbors (KNN), and Random Forest paired with different types of linguistic 
+features (e.g., bag of words, n-grams) (Li et al., 2021). While these models have advantages in stability, they require extensive feature 
+engineering and often face performance limitations (Balkus & Yan, 2023; Li et al., 2021), partly due to their neglect of the inherent 
+sequential structure and contextual details in text, which hinders their ability to grasp the meanings of words and other linguistic 
+expressions in context (Brown et al., 2020; Li et al., 2021). In recognition of these limitations, recent NLP research has pivoted towards 
+deep learning models, which enable classifiers to capture complex word characteristics and contextual variation (Liu et al., 2023). 
+OpenAI’s GPT models and its consumer-facing service ChatGPT exemplify this shift. With a high level of contextual understanding, 
+these models can generate precise, relevant responses to user prompts, and their performance on specific tasks and/or in specific 
+domains can be further improved through few-shot learning, prompt engineering, or fine-tuning (Brown et al., 2020; Koco´n et al., 
+2023; Ray, 2023). 
+Few-shot learning operates by providing the model with K examples of paired contexts and completions, followed by a single 
+context example, from which the model is then tasked to predict the completion, while zero-shot learning relies on a task’s natural 
+language description (i.e., prompt) only without any examples (Brown et al., 2020). Fine-tuning the base model with a training dataset, 
+essentially an extended form of few-shot learning, involves increasing the K value to adjust the model’s pre-trained parameters on a 
+domain-specific dataset. Few-shot learning and fine-tuning are now both frequently employed to enhance the performance of the base 
+model on targeted classification tasks (Brown et al., 2020; Wei et al., 2022). For example, Loukas et al. (2023) reported that in 
+classifying customer service queries into 77 distinct intent categories, GPT-3.5 in a one-shot setting and GPT-4 in a three-shot setting 
+achieved F1 scores of 74.3% and 82.7%, respectively, outperforming several fine-tuned masked language models (e.g., P-MPNet-v2) in 
+the same settings. Wachowiak and Gromann (2023) reported that in a 12-shot setting, GPT-3 achieved an accuracy rate of 65.15% in 
+detecting the source domains of conceptual metaphors. 
+Prompt engineering refers to the process of carefully designing and refining the input prompts provided to language models to elicit 
+M. Kim and X. Lu
+Journal of English for Academic Purposes 71 (2024) 101422
+specific or more accurate responses (Brown et al., 2020). This method could prove especially advantageous for genre analysis, because 
+it could address the difficulty in automatically identifying certain steps whose rhetorical meanings are not explicitly conveyed through 
+functional language, a difficulty discussed in Cotos and Pendar (2016). While the difficulty makes the steps challenging to detect with 
+traditional supervised learning models, we have the potential, by utilizing ChatGPT, refined via prompt engineering, to operationalize 
+some of these challenging steps. Although research into prompt engineering is still in its early stages, one notable study by Fatouros 
+et al. (2023) demonstrated its efficacy. They used ChatGPT to perform sentiment analysis on financial news headlines in a zero-shot 
+setting. By providing questions or statements crafted in a way that guides the model to increasingly better understand the task, they 
+achieved a 35% performance improvement over traditional financial sentiment analysis models, such as FinBERT, showing the 
+promising capabilities of ChatGPT when combined with carefully engineered prompts. Huang et al. (2023) also examined ChatGPT’s 
+capability to detect and explain implicit hate speech in hateful tweets through careful prompt designs in a zero-shot setting. They 
+reported that the model correctly identified 80% of implicit hateful tweets. 
+Within the fields of applied linguistics and language education, a few efforts have been made to explore the potential of ChatGPT in 
+such tasks as automated essay scoring and question generation. For example, Mizumoto and Eguchi (2023) employed the GPT-3 model 
+to score 12,100 essays sourced from the ETS Corpus of Non-Native Written English (TOEFL11) and reported that the model alone could 
+not predict the gold standard levels of the essays with an adequate level of accuracy and that a model combining the GPT-predicted 
+scores with a set of lexical, syntactic, and cohesion features achieved better performance. Lee et al. (2023) used ChatGPT to create an 
+automatic question generation system for English reading comprehension and developed a step-by-step protocol for generating 
+high-quality questions with ChatGPT through multiple validation rounds by experts and teachers. The protocol included the need to 
+limit the passage length to 250 words and to clearly specify question types and formats in the prompt. They also noted some limitations 
+of ChatGPT such as its dependence on the lexicon of the original texts and the restriction of question types to mainly WH-questions. The 
+two studies above demonstrated the potential of using ChatGPT in language assessment and material development, while also pointing 
+to areas for further exploration and improvement. 
+While previous studies have exhibited the potential of ChatGPT for classification tasks, this potential and the challenges that may 
+arise along with it have not yet been systematically exploited for discourse-level corpus annotation within the fields of applied lin­
+guistics and language education, and no study has explored the possibility of using ChatGPT for rhetorical move-step analysis. This 
+analysis also differs from other classification tasks examined in existing studies in terms of the number and functional nature of the 
+classes involved. To address this gap, this study explores the potential of using ChatGPT for rhetorical move-step annotation and 
+examines the impact of prompt refinement, three-shot learning, and fine-tuning on the model’s annotation accuracy. The findings are 
+anticipated to shed light on the feasibility of employing ChatGPT for other types of corpus annotation and analysis that can be framed 
+as classification tasks as well as the potential applications of ChatGPT in genre-based EAP pedagogy. 
+2.3. Research questions 
+This study aims to address the following two research questions: 
+Table 1 
+Move-step framework for research article introductions (Lu et al., 2021a).  
+Move/Step 
+Description 
+Tag 
+Move 1 
+Establishing a research territory  
+Claiming centrality or value of research area 
+[M1_S1a] 
+Real-world contextualization 
+[M1_S1b] 
+Step 2 
+Making generalizations about research area 
+[M1_S2] 
+Step 3 
+Reviewing items of previous research 
+[M1_S3] 
+Move 2 
+Establishing a niche  
+Counter-claiming 
+[M2_S1a] 
+Indicating a gap 
+[M2_S1b] 
+Question raising 
+[M2_S1c] 
+Continuing a tradition 
+[M2_S1d] 
+Pointing out limitations of previous research 
+[M2_S1e] 
+Step 2 
+Providing justification 
+[M2_S2] 
+Move 3 
+Presenting the present work via  
+Announcing present research 
+[M3_S1] 
+Step 2 
+Presenting research questions or hypotheses 
+[M3_S2a] 
+Step 2 
+Advancing new theoretical claims 
+[M3_S2b] 
+Step 3 
+Definitional clarification 
+[M3_S3] 
+Step 4 
+Summarizing methods 
+[M3_S4a] 
+Step 4 
+Explaining a mathematical model 
+[M3_S4b] 
+Step 4 
+Describing analyzed scenario 
+[M3_S4c] 
+Step 5 
+Announcing and discussing results 
+[M3_S5] 
+Step 6 
+Stating the value of present research 
+[M3_S6] 
+Step 7 
+Outlining the structure of the paper 
+[M3_S7] 
+Step 8 
+Rationalizing research focus and design 
+[M3_S8] 
+Step 9 
+Presenting limitations of current study 
+[M3_S9]  
+M. Kim and X. Lu
+Journal of English for Academic Purposes 71 (2024) 101422
+1. To what extent can few-shot learning and prompt refinement improve the performance of the base model of ChatGPT (GPT-3.5) for 
+annotating applied linguistics research article introductions with rhetorical move-steps?  
+2. To what extent can fine-tuning improve the performance of the base model of ChatGPT (GPT-3.5) for annotating applied linguistics 
+research article introductions with rhetorical move-steps?

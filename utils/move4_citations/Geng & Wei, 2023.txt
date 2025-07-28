@@ -1,0 +1,1 @@
+Xu, Yue, Geng, Shaojie, Yuan, Liangjie (2023). Comparing Human and GPT Model in Chinese Tourist Text Simplification. 2023 International Conference on Asian Language Processing (IALP). https://doi.org/10.1109/ialp61005.2023.10337157

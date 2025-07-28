@@ -1,0 +1,1 @@
+Gusmana, Roman, Haryansyah, , Adimulya Dyas Wibisono,  (2023). Implementasi Algoritma Hill Cipher Menggunakan Kunci Matriks 2x2 Dalam Mengamankan Data Teks. Generation Journal. https://doi.org/10.29407/gj.v7i3.21105

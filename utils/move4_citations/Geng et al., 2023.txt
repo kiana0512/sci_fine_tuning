@@ -1,0 +1,1 @@
+Unknown (None). Table 1: Comparison of recent smart city IDS models (Hazman et al., 2024; Almasri &amp; Alajlan, 2023; Taher et al., 2023; Manickam et al., 2023; Hazman et al., 2023; Ahmed, Beyioku &amp; Yousefi, 2024; Shareef et al., 2024).. . https://doi.org/10.7717/peerj-cs.2869/table-1
